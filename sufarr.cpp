@@ -29,6 +29,19 @@ public:
     SetType tree;
 };
 
+std::ostream&
+operator << (std::ostream &os, const SufArr &arr)
+{
+    const char* src = arr.source.c_str ();
+    for (SetType::const_iterator it = arr.tree.begin (); it != arr.tree.end (); it ++) {
+        unsigned int v = (*it) - src;
+        for (int i = 0; i < 4; i ++) {
+            char c = (v >> (3 - i) * 8) & 0xff;
+            os << c;
+        }
+    }
+    return os;
+}
 
 int
 main ()
@@ -36,5 +49,7 @@ main ()
     std::string src = "abracadabra";
     SufArr arr (src);
 
-    std::copy (arr.tree.begin(), arr.tree.end(), std::ostream_iterator<const char*>(std::cout, "\n"));
+    // std::copy (arr.tree.begin(), arr.tree.end(), std::ostream_iterator<const char*>(std::cout, "\n"));
+
+    std::cout << arr;
 }
