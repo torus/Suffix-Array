@@ -25,7 +25,10 @@ class Indexer {
 public:
     struct UTF8Filter {
         bool operator () (const char *data) {
-            return *data & 0xC0 == 0xC0;
+            bool dest = (*data & 0x80) == 0 || (*data & 0xC0) == 0xC0;
+            if (dest)
+                std::cerr << std::hex << (int) (unsigned char)*data << std::endl;
+            return dest;
         }
     } filter;
 
@@ -33,8 +36,10 @@ public:
         int len = source.length ();
         for (int i = 0; i < len; i ++) {
             const char *data = source.c_str () + i;
-            if (filter (data))
+            if (filter (data)) {
+                std::cerr << " " << data << std::endl;
                 tree.insert (data);
+            }
         }
     }
     const std::string source;
@@ -80,6 +85,7 @@ public:
 std::istream&
 operator >> (std::istream &is, Index &idx)
 {
+    std::cerr << std::dec;
     while (is.good ()) {
         size_t x = 0;
         for (int i = 0; i < 4; i ++) {
@@ -102,7 +108,7 @@ operator >> (std::istream &is, Index &idx)
 int
 main ()
 {
-    std::string src = "abracadabraアブラカダブラ";
+    std::string src = "abraアブラcadabraカダブラ";
     // std::stringbuf buf;
     // std::ifstream ifs ("sufarr.cpp");
     // ifs >> &buf;
@@ -121,7 +127,7 @@ main ()
 
     Index::vec::const_iterator it =
         std::lower_bound (idx.index.begin (), idx.index.end (),
-                          "ラカ", ltstr_index (src));
+                          "ラc", ltstr_index (src));
     if (it != idx.index.end ()) {
         std::cerr << *it;
         std::cerr << (src.c_str () + *it) << std::endl;
