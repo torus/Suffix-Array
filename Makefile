@@ -1,8 +1,8 @@
 suftest: sufarr.o
-	g++ -o $@ $? $(LDFLAGS)
+	g++ -g -o $@ $? $(LDFLAGS)
 
 %.o: %.cpp
-	g++ -c -o $@ $(CXXFLAGS) $?
+	g++ -g -c -o $@ $(CXXFLAGS) $?
 
 clean:
 	rm -f suftest *.o *~
