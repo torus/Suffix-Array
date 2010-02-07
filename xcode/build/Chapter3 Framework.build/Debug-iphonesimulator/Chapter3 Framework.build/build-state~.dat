@@ -1,0 +1,868 @@
+TChapter3 Framework
+v7
+r0
+t286592220.032794
+cCheck dependencies
+cProcessInfoPlistFile "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/Info.plist" Info.plist
+cCompileXIB /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/MainWindow.xib
+cCompileXIB /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Chapter3_FrameworkViewController.xib
+cCpResource "build/Debug-iphonesimulator/Chapter3 Framework.app/tap.caf" Resources/tap.caf
+cCpResource "build/Debug-iphonesimulator/Chapter3 Framework.app/scissors.png" Resources/scissors.png
+cCpResource "build/Debug-iphonesimulator/Chapter3 Framework.app/drawregion.png" Resources/drawregion.png
+cCpResource "build/Debug-iphonesimulator/Chapter3 Framework.app/social.mp3" Resources/social.mp3
+cCompileXIB /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Resources/soundtest.xib
+cCompileXIB /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Resources/storagetest.xib
+cCompileXIB /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Resources/gsmainmenu.xib
+cProcessPCH /var/folders/1g/1ggGcFeIEsSY3MmPhX3zFE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-gtxbjvyeslzrrnfasnqekxtqsrht/Chapter3_Framework_Prefix.pch.gch Chapter3_Framework_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH++ /var/folders/1g/1ggGcFeIEsSY3MmPhX3zFE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-esyvglnxzykyqhcdozxbhddujlfv/Chapter3_Framework_Prefix.pch.gch Chapter3_Framework_Prefix.pch normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC "build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/main.o" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Chapter3_FrameworkAppDelegate.o" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/Chapter3_FrameworkAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Chapter3_FrameworkViewController.o" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/Chapter3_FrameworkViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GLESGameState.o" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GLESGameState.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GameStateManager.o" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GameStateManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GameState.o" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GameState.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GLFont.o" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GLFont.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GLTexture.o" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GLTexture.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/ResourceManager.o" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/ResourceManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/SoundEngine.o" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/SoundEngine.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC "build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsTextureTest.o" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsTextureTest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsSoundTest.o" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsSoundTest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsStorageTest.o" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsStorageTest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsMainMenu.o" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsMainMenu.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/Chapter3 Framework" normal i386
+cGenerateDSYMFile "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app.dSYM" "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/Chapter3 Framework"
+cTouch "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app"
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk
+c000000004ABE051D00000000000000EE
+t1253967133
+s238
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004A0DADCB0000000000180330
+t1242410443
+s1573680
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.h
+c000000004A0DADB60000000000000A22
+t1242410422
+s2594
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/CoreAudio.framework/Headers/CoreAudioTypes.h
+c000000004A0BAA35000000000000F342
+t1242278453
+s62274
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFURL.h
+c000000004A0BA8C00000000000004980
+t1242278080
+s18816
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004A0BAA26000000000026DB00
+t1242278438
+s2546432
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004A0BAB370000000000260C20
+t1242278711
+s2493472
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004A0BAB250000000000001355
+t1242278693
+s4949
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h
+c000000004A0BB03100000000000064FD
+t1242279985
+s25853
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/OpenAL.framework/Headers/alc.h
+c000000004A0BB0310000000000001F45
+t1242279985
+s8005
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/OpenAL.framework/OpenAL
+c000000004A0BB034000000000001C730
+t1242279988
+s116528
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGL.h
+c000000004A0BAD67000000000000094F
+t1242279271
+s2383
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGLDrawable.h
+c000000004A0BAD670000000000000A61
+t1242279271
+s2657
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/gl.h
+c000000004A0BAD670000000000009369
+t1242279271
+s37737
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/glext.h
+c000000004A0BAD670000000000002576
+t1242279271
+s9590
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+c000000004A0BAD70000000000001DD70
+t1242279280
+s122224
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
+c000000004A0BADD7000000000000007D
+t1242279383
+s125
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004A0BAE3400000000000E4270
+t1242279476
+s934512
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004A0CBEBB000000000000075E
+t1242349243
+s1886
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIView.h
+c000000004A0CBEBB0000000000002AC7
+t1242349243
+s10951
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004A0CBF5F0000000001432D80
+t1242349407
+s21179776
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/usr/include/mach/mach.h
+c00000000476340E90000000000001057
+t1197687017
+s4183
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/usr/include/pthread.h
+c000000004748A133000000000000380F
+t1195942195
+s14351
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Chapter3_FrameworkViewController.xib
+c000000004B30520E0000000000001661
+t1261457934
+s5729
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Chapter3_Framework_Prefix.pch
+c000000004B30520E00000000000000CD
+t1261457934
+s205
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/Chapter3_FrameworkAppDelegate.h
+c000000004B30520E00000000000002F2
+t1261457934
+s754
+i<UIKit/UIKit.h>
+i"ResourceManager.h"
+i"GameStateManager.h"
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/Chapter3_FrameworkAppDelegate.m
+c000000004B30688C0000000000000DBE
+t1261463692
+s3518
+i"Chapter3_FrameworkAppDelegate.h"
+i"Chapter3_FrameworkViewController.h"
+i"GameState.h"
+i"gsMainMenu.h"
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/Chapter3_FrameworkViewController.h
+c000000004B30520E00000000000000D5
+t1261457934
+s213
+i<UIKit/UIKit.h>
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/Chapter3_FrameworkViewController.m
+c000000004B30520E000000000000053A
+t1261457934
+s1338
+i"Chapter3_FrameworkViewController.h"
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GLESGameState.h
+c000000004B305540000000000000015F
+t1261458752
+s351
+i<Foundation/Foundation.h>
+i"GameState.h"
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GLESGameState.m
+c000000004B3055460000000000001547
+t1261458758
+s5447
+i"GLESGameState.h"
+i<OpenGLES/EAGLDrawable.h>
+i<QuartzCore/QuartzCore.h>
+i"ResourceManager.h"
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GLFont.h
+c000000004B30520E0000000000000333
+t1261457934
+s819
+i<Foundation/Foundation.h>
+i"GLTexture.h"
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GLFont.m
+c000000004B30520E00000000000015DB
+t1261457934
+s5595
+i"GLFont.h"
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GLTexture.h
+c000000004B30520E000000000000124B
+t1261457934
+s4683
+i<UIKit/UIKit.h>
+i<OpenGLES/ES1/gl.h>
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GLTexture.m
+c000000004B30520E0000000000002E27
+t1261457934
+s11815
+i<OpenGLES/ES1/glext.h>
+i"GLTexture.h"
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GameState.h
+c000000004B30520E0000000000000157
+t1261457934
+s343
+i<UIKit/UIKit.h>
+i"GameStateManager.h"
+i<UIKit/UIView.h>
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GameState.m
+c000000004B30520E00000000000001FE
+t1261457934
+s510
+i"GameState.h"
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GameStateManager.h
+c000000004B30520E00000000000000D2
+t1261457934
+s210
+i<UIKit/UIKit.h>
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GameStateManager.m
+c000000004B30520E00000000000000D0
+t1261457934
+s208
+i"GameStateManager.h"
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/ResourceManager.h
+c000000004B30520E00000000000009F9
+t1261457934
+s2553
+i<OpenGLES/EAGL.h>
+i<OpenGLES/EAGLDrawable.h>
+i<OpenGLES/ES1/gl.h>
+i<OpenGLES/ES1/glext.h>
+i<Foundation/Foundation.h>
+i"GLTexture.h"
+i"GLFont.h"
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/ResourceManager.m
+c000000004B30520E000000000000263B
+t1261457934
+s9787
+i"ResourceManager.h"
+i"GLESGameState.h"
+i<OpenGLES/EAGLDrawable.h>
+i<QuartzCore/QuartzCore.h>
+i"SoundEngine.h"
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/SoundEngine.cpp
+c000000004B30520E000000000000CF17
+t1261457934
+s53015
+i<AudioToolbox/AudioToolbox.h>
+i<CoreFoundation/CFURL.h>
+i<OpenAL/al.h>
+i<OpenAL/alc.h>
+i<map>
+i<vector>
+i<pthread.h>
+i<mach/mach.h>
+i"SoundEngine.h"
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/SoundEngine.h
+c000000004B30520E0000000000003BD9
+t1261457934
+s15321
+i<CoreAudio/CoreAudioTypes.h>
+i<AudioToolbox/AudioToolbox.h>
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsMainMenu.h
+c000000004B3066B40000000000000130
+t1261463220
+s304
+i<Foundation/Foundation.h>
+i"GameState.h"
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsMainMenu.m
+c000000004B3067A000000000000003A1
+t1261463456
+s929
+i"gsMainMenu.h"
+i"gsSoundTest.h"
+i"gsTextureTest.h"
+i"gsStorageTest.h"
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsSoundTest.h
+c000000004B305A6C0000000000000136
+t1261460076
+s310
+i<Foundation/Foundation.h>
+i"GameState.h"
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsSoundTest.m
+c000000004B3068680000000000000394
+t1261463656
+s916
+i"gsSoundTest.h"
+i"ResourceManager.h"
+i"gsMainMenu.h"
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsStorageTest.h
+c000000004B305EC8000000000000013C
+t1261461192
+s316
+i<Foundation/Foundation.h>
+i"GameState.h"
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsStorageTest.m
+c000000004B3068480000000000000B82
+t1261463624
+s2946
+i"gsStorageTest.h"
+i"ResourceManager.h"
+i"gsMainMenu.h"
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsTextureTest.h
+c000000004B3055D600000000000000D0
+t1261458902
+s208
+i<Foundation/Foundation.h>
+i"GLESGameState.h"
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsTextureTest.m
+c000000004B30691800000000000006CE
+t1261463832
+s1742
+i"gsTextureTest.h"
+i"ResourceManager.h"
+i"gsMainMenu.h"
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/MainWindow.xib
+c000000004B30520E0000000000002238
+t1261457934
+s8760
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Resources/drawregion.png
+c000000004B30520E0000000000000534
+t1261457934
+s1332
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Resources/gsmainmenu.xib
+c000000004B30681C0000000000003141
+t1261463580
+s12609
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Resources/scissors.png
+c000000004B30520E0000000000000D38
+t1261457934
+s3384
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Resources/social.mp3
+c000000004B30520E0000000000057A7D
+t1261457934
+s359037
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Resources/soundtest.xib
+c000000004B305D280000000000003760
+t1261460776
+s14176
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Resources/storagetest.xib
+c000000004B3064F00000000000002AD0
+t1261462768
+s10960
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Resources/tap.caf
+c000000004B30520E000000000001A5BC
+t1261457934
+s107964
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Chapter3 Framework.LinkFileList
+c000000004B64D55400000000000009D3
+t1264899412
+s2515
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Chapter3_FrameworkAppDelegate.o
+t1264899417
+s46192
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Chapter3_FrameworkViewController.o
+t1264899417
+s29928
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GLESGameState.o
+t1264899417
+s19072
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GLFont.o
+t1264899417
+s18972
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GLTexture.o
+t1264899417
+s29668
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GameState.o
+t1264899417
+s10804
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GameStateManager.o
+t1264899417
+s5820
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/ResourceManager.o
+t1264899417
+s28396
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/SoundEngine.o
+t1264899419
+s292652
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsMainMenu.o
+t1264899418
+s13060
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsSoundTest.o
+t1264899417
+s13668
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsStorageTest.o
+t1264899418
+s20096
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsTextureTest.o
+t1264899417
+s17272
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/main.o
+t1264899417
+s6004
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app
+t1264899420
+s476
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app.dSYM
+t1264899419
+s102
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/Chapter3 Framework
+t1264899419
+s173516
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/Chapter3_FrameworkViewController.nib
+t1264899413
+s1151
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/Info.plist
+t1264899413
+s636
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/MainWindow.nib
+t1264899413
+s1517
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/PkgInfo
+t1264899413
+s8
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/drawregion.png
+t1264899413
+s1332
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/gsmainmenu.nib
+t1264899415
+s2989
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/scissors.png
+t1264899413
+s3384
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/social.mp3
+t1264899414
+s359037
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/soundtest.nib
+t1264899414
+s3279
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/storagetest.nib
+t1264899415
+s2312
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/tap.caf
+t1264899413
+s107964
+
+N/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/main.m
+c000000004B30520E0000000000000173
+t1261457934
+s371
+i<UIKit/UIKit.h>
+
+N/var/folders/1g/1ggGcFeIEsSY3MmPhX3zFE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-esyvglnxzykyqhcdozxbhddujlfv/Chapter3_Framework_Prefix.pch.gch
+t1264899415
+s2519408
+
+N/var/folders/1g/1ggGcFeIEsSY3MmPhX3zFE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-gtxbjvyeslzrrnfasnqekxtqsrht/Chapter3_Framework_Prefix.pch.gch
+t1264899417
+s12957072
+
+NInfo.plist
+c000000004B30520E00000000000003A0
+t1261457934
+s928
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies286592212#286592212#0(0"0(0#1#0"4300885448#0"0#
+
+CCompileC "build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Chapter3_FrameworkAppDelegate.o" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/Chapter3_FrameworkAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286592217.284087
+e286592217.399309
+r1
+xCompileC
+xbuild/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Chapter3_FrameworkAppDelegate.o
+x/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/Chapter3_FrameworkAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@112"Compile /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/Chapter3_FrameworkAppDelegate.m286592217#286592217#0(0"0(0#0#104"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/Chapter3_FrameworkAppDelegate.m4300885448#2435"    cd /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator -I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/include "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/1g/1ggGcFeIEsSY3MmPhX3zFE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-gtxbjvyeslzrrnfasnqekxtqsrht/Chapter3_Framework_Prefix.pch -c /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/Chapter3_FrameworkAppDelegate.m -o "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Chapter3_FrameworkAppDelegate.o"0#
+
+CCompileC "build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Chapter3_FrameworkViewController.o" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/Chapter3_FrameworkViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286592217.345998
+e286592217.444639
+r1
+xCompileC
+xbuild/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Chapter3_FrameworkViewController.o
+x/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/Chapter3_FrameworkViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@115"Compile /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/Chapter3_FrameworkViewController.m286592217#286592217#0(0"0(0#0#107"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/Chapter3_FrameworkViewController.m4300885448#2441"    cd /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator -I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/include "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/1g/1ggGcFeIEsSY3MmPhX3zFE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-gtxbjvyeslzrrnfasnqekxtqsrht/Chapter3_Framework_Prefix.pch -c /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/Chapter3_FrameworkViewController.m -o "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Chapter3_FrameworkViewController.o"0#
+
+CCompileC "build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GLESGameState.o" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GLESGameState.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286592217.399447
+e286592217.512524
+r1
+xCompileC
+xbuild/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GLESGameState.o
+x/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GLESGameState.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@96"Compile /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GLESGameState.m286592217#286592217#0(0"0(0#0#88"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GLESGameState.m4300885448#2403"    cd /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator -I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/include "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/1g/1ggGcFeIEsSY3MmPhX3zFE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-gtxbjvyeslzrrnfasnqekxtqsrht/Chapter3_Framework_Prefix.pch -c /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GLESGameState.m -o "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GLESGameState.o"0#
+
+CCompileC "build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GLFont.o" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GLFont.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286592217.512630
+e286592217.627036
+r1
+xCompileC
+xbuild/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GLFont.o
+x/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GLFont.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@89"Compile /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GLFont.m286592217#286592217#0(0"0(0#0#81"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GLFont.m4300885448#2389"    cd /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator -I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/include "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/1g/1ggGcFeIEsSY3MmPhX3zFE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-gtxbjvyeslzrrnfasnqekxtqsrht/Chapter3_Framework_Prefix.pch -c /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GLFont.m -o "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GLFont.o"0#
+
+CCompileC "build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GLTexture.o" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GLTexture.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286592217.593706
+e286592217.752606
+r1
+xCompileC
+xbuild/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GLTexture.o
+x/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GLTexture.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@92"Compile /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GLTexture.m286592217#286592217#0(0"0(0#0#84"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GLTexture.m4300885448#2395"    cd /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator -I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/include "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/1g/1ggGcFeIEsSY3MmPhX3zFE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-gtxbjvyeslzrrnfasnqekxtqsrht/Chapter3_Framework_Prefix.pch -c /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GLTexture.m -o "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GLTexture.o"0#
+
+CCompileC "build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GameState.o" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GameState.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286592217.510914
+e286592217.593541
+r1
+xCompileC
+xbuild/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GameState.o
+x/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GameState.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@92"Compile /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GameState.m286592217#286592217#0(0"0(0#0#84"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GameState.m4300885448#2395"    cd /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator -I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/include "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/1g/1ggGcFeIEsSY3MmPhX3zFE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-gtxbjvyeslzrrnfasnqekxtqsrht/Chapter3_Framework_Prefix.pch -c /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GameState.m -o "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GameState.o"0#
+
+CCompileC "build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GameStateManager.o" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GameStateManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286592217.444775
+e286592217.510778
+r1
+xCompileC
+xbuild/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GameStateManager.o
+x/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GameStateManager.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@99"Compile /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GameStateManager.m286592217#286592217#0(0"0(0#0#91"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GameStateManager.m4300885448#2409"    cd /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator -I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/include "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/1g/1ggGcFeIEsSY3MmPhX3zFE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-gtxbjvyeslzrrnfasnqekxtqsrht/Chapter3_Framework_Prefix.pch -c /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/GameStateManager.m -o "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GameStateManager.o"0#
+
+CCompileC "build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/ResourceManager.o" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/ResourceManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286592217.627223
+e286592217.781574
+r1
+xCompileC
+xbuild/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/ResourceManager.o
+x/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/ResourceManager.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/ResourceManager.m: In function '+[ResourceManager directoryMasher]':
+o/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/ResourceManager.m:278: warning: 'stringWithContentsOfFile:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h:357)
+lSLF07#2@98"Compile /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/ResourceManager.m286592217#286592217#0(457"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/ResourceManager.m: In function '+[ResourceManager directoryMasher]':/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/ResourceManager.m:278: warning: 'stringWithContentsOfFile:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h:357)1(22@209"'stringWithContentsOfFile:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h:357)286592217#142#315#0(6@90"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/ResourceManager.m283150734#278#0#278#0#33"'*' is deprecated (declared at *)0(0#0#90"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/ResourceManager.m4300885448#2407"    cd /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator -I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/include "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/1g/1ggGcFeIEsSY3MmPhX3zFE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-gtxbjvyeslzrrnfasnqekxtqsrht/Chapter3_Framework_Prefix.pch -c /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/ResourceManager.m -o "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/ResourceManager.o"0#
+
+CCompileC "build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/SoundEngine.o" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/SoundEngine.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s286592217.753638
+e286592219.723345
+r1
+xCompileC
+xbuild/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/SoundEngine.o
+x/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/SoundEngine.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@96"Compile /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/SoundEngine.cpp286592217#286592219#0(0"0(0#0#88"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/SoundEngine.cpp4300885448#2412"    cd /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator -I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/include "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/1g/1ggGcFeIEsSY3MmPhX3zFE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-esyvglnxzykyqhcdozxbhddujlfv/Chapter3_Framework_Prefix.pch -c /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/SoundEngine.cpp -o "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/SoundEngine.o"0#
+
+CCompileC "build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsMainMenu.o" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsMainMenu.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286592218.056768
+e286592218.120125
+r1
+xCompileC
+xbuild/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsMainMenu.o
+x/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsMainMenu.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@93"Compile /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsMainMenu.m286592218#286592218#0(0"0(0#0#85"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsMainMenu.m4300885448#2397"    cd /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator -I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/include "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/1g/1ggGcFeIEsSY3MmPhX3zFE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-gtxbjvyeslzrrnfasnqekxtqsrht/Chapter3_Framework_Prefix.pch -c /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsMainMenu.m -o "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsMainMenu.o"0#
+
+CCompileC "build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsSoundTest.o" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsSoundTest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286592217.894041
+e286592217.970211
+r1
+xCompileC
+xbuild/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsSoundTest.o
+x/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsSoundTest.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@94"Compile /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsSoundTest.m286592217#286592217#0(0"0(0#0#86"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsSoundTest.m4300885448#2399"    cd /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator -I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/include "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/1g/1ggGcFeIEsSY3MmPhX3zFE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-gtxbjvyeslzrrnfasnqekxtqsrht/Chapter3_Framework_Prefix.pch -c /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsSoundTest.m -o "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsSoundTest.o"0#
+
+CCompileC "build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsStorageTest.o" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsStorageTest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286592217.970347
+e286592218.056637
+r1
+xCompileC
+xbuild/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsStorageTest.o
+x/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsStorageTest.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsStorageTest.m: In function '-[gsStorageTest log:]':
+o/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsStorageTest.m:44: warning: format not a string literal and no format arguments
+lSLF07#2@96"Compile /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsStorageTest.m286592217#286592218#0(281"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsStorageTest.m: In function '-[gsStorageTest log:]':/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsStorageTest.m:44: warning: format not a string literal and no format arguments1(22@51"Format not a string literal and no format arguments286592218#127#154#0(6@88"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsStorageTest.m283156424#44#0#44#0#51"format not a string literal and no format arguments0(0#0#88"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsStorageTest.m4300885448#2403"    cd /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator -I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/include "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/1g/1ggGcFeIEsSY3MmPhX3zFE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-gtxbjvyeslzrrnfasnqekxtqsrht/Chapter3_Framework_Prefix.pch -c /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsStorageTest.m -o "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsStorageTest.o"0#
+
+CCompileC "build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsTextureTest.o" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsTextureTest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286592217.781707
+e286592217.893925
+r1
+xCompileC
+xbuild/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsTextureTest.o
+x/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsTextureTest.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@96"Compile /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsTextureTest.m286592217#286592217#0(0"0(0#0#88"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsTextureTest.m4300885448#2403"    cd /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator -I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/include "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/1g/1ggGcFeIEsSY3MmPhX3zFE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-gtxbjvyeslzrrnfasnqekxtqsrht/Chapter3_Framework_Prefix.pch -c /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Classes/gsTextureTest.m -o "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsTextureTest.o"0#
+
+CCompileC "build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/main.o" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286592217.282857
+e286592217.345871
+r1
+xCompileC
+xbuild/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/main.o
+x/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@79"Compile /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/main.m286592217#286592217#0(0"0(0#0#71"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/main.m4300885448#2377"    cd /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator -I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/include "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/1g/1ggGcFeIEsSY3MmPhX3zFE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-gtxbjvyeslzrrnfasnqekxtqsrht/Chapter3_Framework_Prefix.pch -c /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/main.m -o "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/main.o"0#
+
+CCompileXIB /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Chapter3_FrameworkViewController.xib
+s286592213.012462
+e286592213.829209
+r1
+xCompileXIB
+x/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Chapter3_FrameworkViewController.xib
+lSLF07#2@47"CompileXIB Chapter3_FrameworkViewController.xib286592213#286592213#0(0"0(0#0#101"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Chapter3_FrameworkViewController.xib4300885448#615"    cd /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/Chapter3_FrameworkViewController.nib" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Chapter3_FrameworkViewController.xib0#
+
+CCompileXIB /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/MainWindow.xib
+s286592213.010822
+e286592213.522559
+r1
+xCompileXIB
+x/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib286592213#286592213#0(0"0(0#0#79"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/MainWindow.xib4300885448#571"    cd /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/MainWindow.nib" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/MainWindow.xib0#
+
+CCompileXIB /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Resources/gsmainmenu.xib
+s286592214.725584
+e286592215.414375
+r1
+xCompileXIB
+x/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Resources/gsmainmenu.xib
+lSLF07#2@35"CompileXIB Resources/gsmainmenu.xib286592214#286592215#0(0"0(0#0#89"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Resources/gsmainmenu.xib4300885448#581"    cd /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/gsmainmenu.nib" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Resources/gsmainmenu.xib0#
+
+CCompileXIB /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Resources/soundtest.xib
+s286592213.526427
+e286592214.725318
+r1
+xCompileXIB
+x/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Resources/soundtest.xib
+lSLF07#2@34"CompileXIB Resources/soundtest.xib286592213#286592214#0(0"0(0#0#88"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Resources/soundtest.xib4300885448#579"    cd /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/soundtest.nib" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Resources/soundtest.xib0#
+
+CCompileXIB /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Resources/storagetest.xib
+s286592214.113746
+e286592215.392664
+r1
+xCompileXIB
+x/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Resources/storagetest.xib
+lSLF07#2@36"CompileXIB Resources/storagetest.xib286592214#286592215#0(0"0(0#0#90"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Resources/storagetest.xib4300885448#583"    cd /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/storagetest.nib" /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Resources/storagetest.xib0#
+
+CCpResource "build/Debug-iphonesimulator/Chapter3 Framework.app/drawregion.png" Resources/drawregion.png
+s286592213.524988
+e286592213.629063
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Chapter3 Framework.app/drawregion.png
+xResources/drawregion.png
+lSLF07#2@29"Copy Resources/drawregion.png286592213#286592213#0(0"0(0#0#89"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Resources/drawregion.png4300885448#559"    cd /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Resources/drawregion.png "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app"0#
+
+CCpResource "build/Debug-iphonesimulator/Chapter3 Framework.app/scissors.png" Resources/scissors.png
+s286592213.524212
+e286592213.628074
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Chapter3 Framework.app/scissors.png
+xResources/scissors.png
+lSLF07#2@27"Copy Resources/scissors.png286592213#286592213#0(0"0(0#0#87"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Resources/scissors.png4300885448#557"    cd /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Resources/scissors.png "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app"0#
+
+CCpResource "build/Debug-iphonesimulator/Chapter3 Framework.app/social.mp3" Resources/social.mp3
+s286592213.525697
+e286592214.113601
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Chapter3 Framework.app/social.mp3
+xResources/social.mp3
+lSLF07#2@25"Copy Resources/social.mp3286592213#286592214#0(0"0(0#0#85"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Resources/social.mp34300885448#555"    cd /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Resources/social.mp3 "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app"0#
+
+CCpResource "build/Debug-iphonesimulator/Chapter3 Framework.app/tap.caf" Resources/tap.caf
+s286592213.522682
+e286592213.910465
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Chapter3 Framework.app/tap.caf
+xResources/tap.caf
+lSLF07#2@22"Copy Resources/tap.caf286592213#286592213#0(0"0(0#0#82"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Resources/tap.caf4300885448#552"    cd /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Resources/tap.caf "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app"0#
+
+CGenerateDSYMFile "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app.dSYM" "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/Chapter3 Framework"
+s286592219.953568
+e286592220.028643
+r1
+xGenerateDSYMFile
+x/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app.dSYM
+x/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/Chapter3 Framework
+lSLF07#2@146"GenerateDSYMFile "build/Debug-iphonesimulator/Chapter3 Framework.app.dSYM" "build/Debug-iphonesimulator/Chapter3 Framework.app/Chapter3 Framework"286592219#286592220#0(0"0(0#0#134"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/Chapter3 Framework4300885448#498"    cd /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/Chapter3 Framework" -o "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app.dSYM"0#
+
+CLd "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/Chapter3 Framework" normal i386
+s286592219.723576
+e286592219.953417
+r1
+xLd
+x/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/Chapter3 Framework
+xnormal
+xi386
+lSLF07#2@139"Link /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/Chapter3 Framework286592219#286592219#0(0"0(0#0#0"4300885448#1155"    cd /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/g++-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -L/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator -F/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator -filelist "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Chapter3 Framework.LinkFileList" -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -framework OpenGLES -framework AudioToolbox -framework QuartzCore -framework OpenAL -framework OpenGLES -o "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/Chapter3 Framework"0#
+
+CProcessInfoPlistFile "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/Info.plist" Info.plist
+s286592212.991256
+e286592213.010705
+r1
+xProcessInfoPlistFile
+x/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/Info.plist
+xInfo.plist
+lSLF07#2@18"Process Info.plist286592212#286592213#0(0"0(0#0#75"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Info.plist4300885448#575"    cd /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Info.plist -genpkginfo "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app/Info.plist"0#
+
+CProcessPCH /var/folders/1g/1ggGcFeIEsSY3MmPhX3zFE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-gtxbjvyeslzrrnfasnqekxtqsrht/Chapter3_Framework_Prefix.pch.gch Chapter3_Framework_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s286592215.414527
+e286592217.282653
+r1
+xProcessPCH
+x/var/folders/1g/1ggGcFeIEsSY3MmPhX3zFE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-gtxbjvyeslzrrnfasnqekxtqsrht/Chapter3_Framework_Prefix.pch.gch
+xChapter3_Framework_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@40"Precompile Chapter3_Framework_Prefix.pch286592215#286592217#0(0"0(0#0#94"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Chapter3_Framework_Prefix.pch4300885448#2230"    cd /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator -I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/include "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -c /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Chapter3_Framework_Prefix.pch -o /var/folders/1g/1ggGcFeIEsSY3MmPhX3zFE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-gtxbjvyeslzrrnfasnqekxtqsrht/Chapter3_Framework_Prefix.pch.gch0#
+
+CProcessPCH++ /var/folders/1g/1ggGcFeIEsSY3MmPhX3zFE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-esyvglnxzykyqhcdozxbhddujlfv/Chapter3_Framework_Prefix.pch.gch Chapter3_Framework_Prefix.pch normal i386 c++ com.apple.compilers.gcc.4_2
+s286592215.415663
+e286592215.737156
+r1
+xProcessPCH++
+x/var/folders/1g/1ggGcFeIEsSY3MmPhX3zFE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-esyvglnxzykyqhcdozxbhddujlfv/Chapter3_Framework_Prefix.pch.gch
+xChapter3_Framework_Prefix.pch
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@40"Precompile Chapter3_Framework_Prefix.pch286592215#286592215#0(0"0(0#0#94"/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Chapter3_Framework_Prefix.pch4300885448#2241"    cd /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c++-header -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator -I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/include "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Chapter3 Framework.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -c /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/Chapter3_Framework_Prefix.pch -o /var/folders/1g/1ggGcFeIEsSY3MmPhX3zFE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-esyvglnxzykyqhcdozxbhddujlfv/Chapter3_Framework_Prefix.pch.gch0#
+
+CTouch "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app"
+s286592220.028758
+e286592220.032738
+r1
+xTouch
+x/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app
+lSLF07#2@121"Touch /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app286592220#286592220#0(0"0(0#0#0"4300885448#343"    cd /Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/toru/Downloads/Chapter3_Example_Code/Chapter3_Example_p95/build/Debug-iphonesimulator/Chapter3 Framework.app"0#
+
