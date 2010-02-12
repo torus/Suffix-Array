@@ -38,6 +38,10 @@
 		9B8D8C0C10E0810E005FB7EC /* gsmainmenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8D8C0B10E0810E005FB7EC /* gsmainmenu.xib */; };
 		9B8D8C1110E08128005FB7EC /* gsMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8D8C1010E08128005FB7EC /* gsMainMenu.m */; };
 		9BEABBC60FFAA9BA00219B8E /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BEABBC50FFAA9BA00219B8E /* OpenAL.framework */; };
+		9C5BCBE4111FD44A00484DA1 /* SuffixArray.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5BCBE3111FD44A00484DA1 /* SuffixArray.framework */; };
+		9C5BCCDE1123EFD600484DA1 /* test.lua in Resources */ = {isa = PBXBuildFile; fileRef = 9C5BCCDD1123EFD600484DA1 /* test.lua */; };
+		9C985967111E534700B44B29 /* gsToruTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C985966111E534700B44B29 /* gsToruTest.m */; };
+		9C985981111E56CB00B44B29 /* torutest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C985980111E56CB00B44B29 /* torutest.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +92,13 @@
 		9B8D8C0F10E08128005FB7EC /* gsMainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gsMainMenu.h; sourceTree = "<group>"; };
 		9B8D8C1010E08128005FB7EC /* gsMainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gsMainMenu.m; sourceTree = "<group>"; };
 		9BEABBC50FFAA9BA00219B8E /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		9C5BCBE3111FD44A00484DA1 /* SuffixArray.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SuffixArray.framework; path = "/Users/toru/src/misc/Suffix-Array/SuffixArray.framework"; sourceTree = "<absolute>"; };
+		9C5BCC581121655100484DA1 /* lauxlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lauxlib.h; path = ../SuffixArray.framework/Headers/lauxlib.h; sourceTree = SOURCE_ROOT; };
+		9C5BCCC01123ED2700484DA1 /* test.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.lua; sourceTree = "<group>"; };
+		9C5BCCDD1123EFD600484DA1 /* test.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = test.lua; path = ../test.lua; sourceTree = SOURCE_ROOT; };
+		9C985965111E534700B44B29 /* gsToruTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gsToruTest.h; sourceTree = "<group>"; };
+		9C985966111E534700B44B29 /* gsToruTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gsToruTest.m; sourceTree = "<group>"; };
+		9C985980111E56CB00B44B29 /* torutest.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = torutest.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +114,7 @@
 				7F94D1290FA970DA00A02C11 /* QuartzCore.framework in Frameworks */,
 				9BEABBC60FFAA9BA00219B8E /* OpenAL.framework in Frameworks */,
 				9B8D8B6C10E06E85005FB7EC /* OpenGLES.framework in Frameworks */,
+				9C5BCBE4111FD44A00484DA1 /* SuffixArray.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,11 +145,15 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				9C5BCCDD1123EFD600484DA1 /* test.lua */,
+				9C5BCCC01123ED2700484DA1 /* test.lua */,
+				9C5BCC581121655100484DA1 /* lauxlib.h */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				9C985980111E56CB00B44B29 /* torutest.xib */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -178,6 +194,7 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				9C5BCBE3111FD44A00484DA1 /* SuffixArray.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -214,6 +231,8 @@
 				9B8D8BEA10E079CA005FB7EC /* gsStorageTest.m */,
 				9B8D8C0F10E08128005FB7EC /* gsMainMenu.h */,
 				9B8D8C1010E08128005FB7EC /* gsMainMenu.m */,
+				9C985965111E534700B44B29 /* gsToruTest.h */,
+				9C985966111E534700B44B29 /* gsToruTest.m */,
 			);
 			name = GameStates;
 			sourceTree = "<group>";
@@ -286,6 +305,8 @@
 				9B8D8BC310E0754B005FB7EC /* soundtest.xib in Resources */,
 				9B8D8BE610E079AA005FB7EC /* storagetest.xib in Resources */,
 				9B8D8C0C10E0810E005FB7EC /* gsmainmenu.xib in Resources */,
+				9C985981111E56CB00B44B29 /* torutest.xib in Resources */,
+				9C5BCCDE1123EFD600484DA1 /* test.lua in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +331,7 @@
 				9B8D8BC810E0755F005FB7EC /* gsSoundTest.m in Sources */,
 				9B8D8BEB10E079CA005FB7EC /* gsStorageTest.m in Sources */,
 				9B8D8C1110E08128005FB7EC /* gsMainMenu.m in Sources */,
+				9C985967111E534700B44B29 /* gsToruTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,11 +343,19 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/..\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Chapter3_Framework_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../local/lib\"",
+				);
 				PRODUCT_NAME = "Chapter3 Framework";
 			};
 			name = Debug;
@@ -335,9 +365,17 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/..\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Chapter3_Framework_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../local/lib\"",
+				);
 				PRODUCT_NAME = "Chapter3 Framework";
 			};
 			name = Release;

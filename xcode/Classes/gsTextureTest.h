@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#include "GLESGameState.h"
+#import "GLESGameState.h"
 
 @interface gsTextureTest : GLESGameState {
 

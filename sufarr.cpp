@@ -148,7 +148,7 @@ save_index (void *indexer, const char *path)
 {
     std::ofstream ofs (path);
     ofs << *static_cast<Indexer*>(indexer);
-    std::cerr << __LINE__ << std::endl;
+    std::cerr << __LINE__ << " " << path << std::endl;
 
     ofs.close ();
 }
@@ -159,7 +159,7 @@ load_index (const char *path, const char *src_path)
     std::ifstream idx_strm (path);
     Index *idx = new Index;
     idx_strm >> *idx;
-    std::cerr << __LINE__ << std::endl;
+    std::cerr << __LINE__ << " " << src_path << std::endl;
 
     std::ifstream src_strm (src_path);
     std::stringbuf buf;
