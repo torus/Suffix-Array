@@ -71,8 +71,8 @@
 		9C9A729511276A4100F692D6 /* lzio.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A724211276A4000F692D6 /* lzio.c */; };
 		9C9A729711276A4100F692D6 /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A724511276A4000F692D6 /* print.c */; };
 		9C9A72AC11276A4100F692D6 /* sufarr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A725C11276A4100F692D6 /* sufarr.cpp */; };
-		9C9A72B311276A9900F692D6 /* sufarr_wrap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A72B211276A9900F692D6 /* sufarr_wrap.cpp */; };
 		9C9A73851127B08400F692D6 /* test.lua in Resources */ = {isa = PBXBuildFile; fileRef = 9C9A73841127B08400F692D6 /* test.lua */; };
+		9C9A74251129324C00F692D6 /* sufarr_wrap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A74241129324C00F692D6 /* sufarr_wrap.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -181,8 +181,9 @@
 		9C9A724511276A4000F692D6 /* print.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = print.c; sourceTree = "<group>"; };
 		9C9A725B11276A4100F692D6 /* sufarr_c_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sufarr_c_api.h; path = ../sufarr_c_api.h; sourceTree = SOURCE_ROOT; };
 		9C9A725C11276A4100F692D6 /* sufarr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sufarr.cpp; path = ../sufarr.cpp; sourceTree = SOURCE_ROOT; };
-		9C9A72B211276A9900F692D6 /* sufarr_wrap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sufarr_wrap.cpp; path = ../sufarr_wrap.cpp; sourceTree = SOURCE_ROOT; };
 		9C9A73841127B08400F692D6 /* test.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = test.lua; path = ../test.lua; sourceTree = SOURCE_ROOT; };
+		9C9A74241129324C00F692D6 /* sufarr_wrap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sufarr_wrap.cpp; sourceTree = "<group>"; };
+		9C9A742D112932EF00F692D6 /* malloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = malloc.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,9 +242,11 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				9C9A74241129324C00F692D6 /* sufarr_wrap.cpp */,
 				9C9A71EE11276A0800F692D6 /* SuffixArray */,
 				32CA4F630368D1EE00C91783 /* Chapter3_Framework_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
+				9C9A742D112932EF00F692D6 /* malloc.h */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -338,7 +341,6 @@
 		9C9A71EE11276A0800F692D6 /* SuffixArray */ = {
 			isa = PBXGroup;
 			children = (
-				9C9A72B211276A9900F692D6 /* sufarr_wrap.cpp */,
 				9C9A71EF11276A4000F692D6 /* lua-5.1.4 */,
 				9C9A725B11276A4100F692D6 /* sufarr_c_api.h */,
 				9C9A725C11276A4100F692D6 /* sufarr.cpp */,
@@ -423,6 +425,7 @@
 			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Chapter3 Framework" */;
 			buildPhases = (
 				1D60588D0D05DD3D006BFB54 /* Resources */,
+				9C9A740911292F4600F692D6 /* ShellScript */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
 			);
@@ -472,6 +475,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9C9A740911292F4600F692D6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "swig -o sufarr_wrap.cpp -c++ -lua ../sufarr.i";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
@@ -524,7 +543,7 @@
 				9C9A729511276A4100F692D6 /* lzio.c in Sources */,
 				9C9A729711276A4100F692D6 /* print.c in Sources */,
 				9C9A72AC11276A4100F692D6 /* sufarr.cpp in Sources */,
-				9C9A72B311276A9900F692D6 /* sufarr_wrap.cpp in Sources */,
+				9C9A74251129324C00F692D6 /* sufarr_wrap.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +602,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-I.";
 				PREBINDING = NO;
 				SDKROOT = iphonesimulator3.0;
 			};
