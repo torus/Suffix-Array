@@ -34,6 +34,25 @@ extern int luaopen_sufarr(lua_State* L); // declare the wrapped module
 	return self;
 }
 
+static int exec_lua (lua_State *L, NSString *luastat)
+{
+//    NSString *luastat = [NSString stringWithFormat:@"mkindex(\"%@\",\"%@\")", dir, script_path];
+    NSLog(@"statement: %@", luastat);
+//    int res2 = luaL_dostring(L, [luastat cStringUsingEncoding:NSASCIIStringEncoding]);
+    const char *str = [luastat cStringUsingEncoding:NSASCIIStringEncoding];
+    int top = lua_gettop(L);
+    int res2 = (luaL_loadstring(L, str) || lua_pcall(L, 0, LUA_MULTRET, 0));
+
+    NSLog(@"lua: returned %d, top: %d -> %d", res2, top, lua_gettop(L));
+    if (res2) {
+        const char* err = lua_tostring(L, -1);
+        NSLog(@"error: %s", err);
+        return 0;
+    } else {
+        return lua_gettop(L) - top;
+    }
+}
+
 -(void) runTests {
     NSLog(@"runTests!");
 
@@ -41,7 +60,9 @@ extern int luaopen_sufarr(lua_State* L); // declare the wrapped module
     luaL_openlibs (L);
     luaopen_sufarr (L);
 
-    NSString *dir = [[NSBundle mainBundle] bundlePath];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *dir = [paths objectAtIndex:0];
+
     NSString *script_path = [[NSBundle mainBundle]
                              pathForResource:@"test" ofType:@"lua"];
 
@@ -52,13 +73,67 @@ extern int luaopen_sufarr(lua_State* L); // declare the wrapped module
         NSLog(@"error: %s", err);
     }
 
-    NSString *luastat = [NSString stringWithFormat:@"dotest(\"%@\")", dir];
-    NSLog(@"statement: %@", luastat);
-    int res2 = luaL_dostring(L, [luastat cStringUsingEncoding:NSASCIIStringEncoding]);
-    NSLog(@"lua: returned %d", res2);
-    if (res2) {
-        const char* err = lua_tostring(L, -1);
-        NSLog(@"error: %s", err);
+    int r1 = exec_lua(L, [NSString stringWithFormat:@"return mkindex(\"%@\",\"%@\")", dir, script_path]);
+    int r2 = exec_lua(L, [NSString stringWithFormat:@"return search(\"%@\",\"%@\",\"%s\")", dir, script_path, "local"]);
+
+    NSLog(@"%d, %d", r1, r2);
+    ///////////
+//    arryAppleProducts = [[NSArray alloc] initWithObjects:@"iPhone", @"iPod", @"MacBook", @"MacBook Pro", nil];
+	arryAdobeSoftwares = [[NSArray alloc] initWithObjects:@"Flex", @"AIR", @"Flash", @"Photoshop", @"Illustrator", nil];  
+    arryAppleProducts = [[NSMutableArray alloc] init];
+
+    for (int i = 0; i < r2; i ++) {
+        NSString *item = [[NSString alloc] initWithUTF8String: lua_tostring(L, r2 - i)];
+//        NSLog(@"item %@", item);
+        [arryAppleProducts addObject: item];
     }
 }
+
+
+
+////////////
+
+#pragma mark Table view methods
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+//    NSLog(@"%s", __FUNCTION__);
+	return 2;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+//    NSLog(@"%s", __FUNCTION__);
+	if (section == 0)
+		return [arryAppleProducts count];
+	else
+		return [arryAdobeSoftwares count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    NSLog(@"%s", __FUNCTION__);
+	static NSString *CellIndentifier = @"Cell";
+	
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIndentifier];
+	if (cell == nil) {
+		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIndentifier] autorelease];
+	}
+	if (indexPath.section == 0)
+		cell.text = [arryAppleProducts objectAtIndex:indexPath.row];
+	else
+		cell.text = [arryAdobeSoftwares objectAtIndex:indexPath.row];
+	return cell;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection: (NSInteger)section {
+//    NSLog(@"%s", __FUNCTION__);
+	if (section == 0)
+		return @"Apple Products";
+	else
+		return @"Adobe Softwares";
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"%s", __FUNCTION__);
+}
+
+
 @end

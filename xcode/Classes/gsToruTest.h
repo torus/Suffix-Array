@@ -11,6 +11,9 @@
 
 @interface gsToruTest : GameState {
     IBOutlet UIView *subview;
+    IBOutlet UITableView *tblview;
+    NSMutableArray *arryAppleProducts;
+	NSArray *arryAdobeSoftwares;
 }
 
 - (void) runTests;

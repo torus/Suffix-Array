@@ -1,3 +1,9 @@
+#/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x c++-header -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -mfix-and-continue -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote /Users/toru/src/testing/CxxTest/build/CxxTest.build/Debug-iphoneos/CxxTest.build/CxxTest-generated-files.hmap -I/Users/toru/src/testing/CxxTest/build/CxxTest.build/Debug-iphoneos/CxxTest.build/CxxTest-own-target-headers.hmap -I/Users/toru/src/testing/CxxTest/build/CxxTest.build/Debug-iphoneos/CxxTest.build/CxxTest-all-target-headers.hmap -iquote /Users/toru/src/testing/CxxTest/build/CxxTest.build/Debug-iphoneos/CxxTest.build/CxxTest-project-headers.hmap -F/Users/toru/src/testing/CxxTest/build/Debug-iphoneos -I/Users/toru/src/testing/CxxTest/build/Debug-iphoneos/include -I/Users/toru/src/testing/CxxTest/build/CxxTest.build/Debug-iphoneos/CxxTest.build/DerivedSources/armv6 -I/Users/toru/src/testing/CxxTest/build/CxxTest.build/Debug-iphoneos/CxxTest.build/DerivedSources -c /Users/toru/src/testing/CxxTest/CxxTest_Prefix.pch -o /var/folders/1g/1ggGcFeIEsSY3MmPhX3zFE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CxxTest_Prefix-fyjpczcjexehebbixjuhebvtropn/CxxTest_Prefix.pch.gch
+
+#/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x c++ -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -mfix-and-continue -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote /Users/toru/src/testing/CxxTest/build/CxxTest.build/Debug-iphoneos/CxxTest.build/CxxTest-generated-files.hmap -I/Users/toru/src/testing/CxxTest/build/CxxTest.build/Debug-iphoneos/CxxTest.build/CxxTest-own-target-headers.hmap -I/Users/toru/src/testing/CxxTest/build/CxxTest.build/Debug-iphoneos/CxxTest.build/CxxTest-all-target-headers.hmap -iquote /Users/toru/src/testing/CxxTest/build/CxxTest.build/Debug-iphoneos/CxxTest.build/CxxTest-project-headers.hmap -F/Users/toru/src/testing/CxxTest/build/Debug-iphoneos -I/Users/toru/src/testing/CxxTest/build/Debug-iphoneos/include -I/Users/toru/src/testing/CxxTest/build/CxxTest.build/Debug-iphoneos/CxxTest.build/DerivedSources/armv6 -I/Users/toru/src/testing/CxxTest/build/CxxTest.build/Debug-iphoneos/CxxTest.build/DerivedSources -include /var/folders/1g/1ggGcFeIEsSY3MmPhX3zFE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CxxTest_Prefix-fyjpczcjexehebbixjuhebvtropn/CxxTest_Prefix.pch -c /Users/toru/src/testing/CxxTest/sufarr.cpp -o /Users/toru/src/testing/CxxTest/build/CxxTest.build/Debug-iphoneos/CxxTest.build/Objects-normal/armv6/sufarr.o
+
+
+
 TARGET = SIMULATOR
 
 PLATFORM_SIMULATOR = /Developer/Platforms/iPhoneSimulator.platform
@@ -15,7 +21,7 @@ CXXINCLUDE = $(DEVEL)/SDKs/iPhoneOS3.0.sdk/usr/include/c++/4.2.1
 SYSROOT = $(DEVEL)/SDKs/iPhoneSimulator3.0.sdk
 
 CC = $(DEVEL)/usr/bin/gcc-4.2
-CXX = $(DEVEL)/usr/bin/g++-4.2
+CXX = $(DEVEL)/usr/bin/gcc-4.2 -x c++
 AR = $(DEVEL)/usr/bin/ar
 CXXFLAGS = -arch $(ARCH) -isysroot $(SYSROOT) -mmacosx-version-min=10.5 -gdwarf-2 \
 	-I$(HOME)/local/include -I/usr/include/malloc \
