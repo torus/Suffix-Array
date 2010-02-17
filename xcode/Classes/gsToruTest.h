@@ -8,13 +8,20 @@
 
 #import <Foundation/Foundation.h>
 #import "GameState.h"
+#import "SuffixArray/lua.h"
 
 @interface gsToruTest : GameState {
     IBOutlet UIView *subview;
     IBOutlet UITableView *tblview;
+    IBOutlet UISearchBar *searchbar;
     NSMutableArray *arryAppleProducts;
 	NSArray *arryAdobeSoftwares;
+
+    lua_State *L;
+    NSString *workDir;
+    NSString *scriptPath;
 }
 
 - (void) runTests;
+- (void) searchAndUpdate: (NSString*) searchText;
 @end

@@ -36,9 +36,8 @@ extern int luaopen_sufarr(lua_State* L); // declare the wrapped module
 
 static int exec_lua (lua_State *L, NSString *luastat)
 {
-//    NSString *luastat = [NSString stringWithFormat:@"mkindex(\"%@\",\"%@\")", dir, script_path];
     NSLog(@"statement: %@", luastat);
-//    int res2 = luaL_dostring(L, [luastat cStringUsingEncoding:NSASCIIStringEncoding]);
+
     const char *str = [luastat cStringUsingEncoding:NSASCIIStringEncoding];
     int top = lua_gettop(L);
     int res2 = (luaL_loadstring(L, str) || lua_pcall(L, 0, LUA_MULTRET, 0));
@@ -53,40 +52,58 @@ static int exec_lua (lua_State *L, NSString *luastat)
     }
 }
 
+static void search_and_update_table (lua_State *L, NSMutableArray *arry,
+                                     NSString *workDir, NSString *scriptPath, NSString *word)
+{
+    NSLog(@"%s: word = %@", __FUNCTION__, word);
+    [arry removeAllObjects];
+    NSLog(@"%s: removed", __FUNCTION__);
+    int r2 = exec_lua(L, [NSString stringWithFormat:@"return search(\"%@\",\"%@\",\"%@\")", workDir, scriptPath, word]);
+    NSLog(@"%s: r2 = %d", __FUNCTION__, r2);
+    for (int i = 0; i < r2; i ++) {
+        NSString *item = [[NSString alloc] initWithUTF8String: lua_tostring(L, r2 - i)];
+        [arry addObject: item];
+    }
+    lua_pop(L, r2);
+}
+
 -(void) runTests {
     NSLog(@"runTests!");
 
-    lua_State *L = lua_open ();
+    L = lua_open ();
     luaL_openlibs (L);
     luaopen_sufarr (L);
 
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *dir = [paths objectAtIndex:0];
+    workDir = [[paths objectAtIndex:0] retain];
 
-    NSString *script_path = [[NSBundle mainBundle]
-                             pathForResource:@"test" ofType:@"lua"];
+    scriptPath = [[[NSBundle mainBundle]
+                            pathForResource:@"test" ofType:@"lua"] retain];
 
-    int res = luaL_dofile(L, [script_path cStringUsingEncoding:NSASCIIStringEncoding]);
+    int res = luaL_dofile(L, [scriptPath cStringUsingEncoding:NSASCIIStringEncoding]);
     NSLog(@"lua: returned %d", res);
     if (res) {
         const char* err = lua_tostring(L, -1);
         NSLog(@"error: %s", err);
     }
 
-    int r1 = exec_lua(L, [NSString stringWithFormat:@"return mkindex(\"%@\",\"%@\")", dir, script_path]);
-    int r2 = exec_lua(L, [NSString stringWithFormat:@"return search(\"%@\",\"%@\",\"%s\")", dir, script_path, "local"]);
+    exec_lua(L, [NSString stringWithFormat:@"return mkindex(\"%@\",\"%@\")", workDir, scriptPath]);
 
-    NSLog(@"%d, %d", r1, r2);
     ///////////
-//    arryAppleProducts = [[NSArray alloc] initWithObjects:@"iPhone", @"iPod", @"MacBook", @"MacBook Pro", nil];
 	arryAdobeSoftwares = [[NSArray alloc] initWithObjects:@"Flex", @"AIR", @"Flash", @"Photoshop", @"Illustrator", nil];  
     arryAppleProducts = [[NSMutableArray alloc] init];
 
+    search_and_update_table (L, arryAppleProducts, workDir, scriptPath, @"local");
+    /* [arryAppleProducts removeAllObjects];
+    int prev_top = lua_gettop(L);
+    int r2 = exec_lua(L, [NSString stringWithFormat:@"return search(\"%@\",\"%@\",\"%s\")", workDir, scriptPath, "local"]);
     for (int i = 0; i < r2; i ++) {
         NSString *item = [[NSString alloc] initWithUTF8String: lua_tostring(L, r2 - i)];
-//        NSLog(@"item %@", item);
         [arryAppleProducts addObject: item];
     }
+    lua_pop(L, r2);
+    NSAssert(lua_gettop(L) == prev_top, @"stack depth");
+     */
 }
 
 
@@ -116,17 +133,18 @@ static int exec_lua (lua_State *L, NSString *luastat)
 	if (cell == nil) {
 		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIndentifier] autorelease];
 	}
-	if (indexPath.section == 0)
+	if (indexPath.section == 0) {
 		cell.text = [arryAppleProducts objectAtIndex:indexPath.row];
-	else
+    } else {
 		cell.text = [arryAdobeSoftwares objectAtIndex:indexPath.row];
+    }
 	return cell;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection: (NSInteger)section {
 //    NSLog(@"%s", __FUNCTION__);
 	if (section == 0)
-		return @"Apple Products";
+		return @"Search Results";
 	else
 		return @"Adobe Softwares";
 }
@@ -135,5 +153,26 @@ static int exec_lua (lua_State *L, NSString *luastat)
     NSLog(@"%s", __FUNCTION__);
 }
 
+- (void) searchAndUpdate: (NSString*) searchText {
+    NSLog(@"%s", __FUNCTION__);
+    NSLog(@"%@", self);
+    NSLog(@"%@", workDir);
+
+    search_and_update_table (L, arryAppleProducts, workDir, scriptPath, searchText);    
+    [tblview reloadData];
+}
+
+
+#pragma mark UISearchBar methods
+
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
+    NSLog(@"search: %@", searchText);
+    [self searchAndUpdate: searchText];
+}
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
+    NSLog(@"search button clicked");
+    [searchBar resignFirstResponder];
+}
 
 @end
