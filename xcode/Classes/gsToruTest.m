@@ -90,22 +90,10 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
     exec_lua(L, [NSString stringWithFormat:@"return mkindex(\"%@\",\"%@\")", workDir, scriptPath]);
 
     ///////////
-	arryAdobeSoftwares = [[NSArray alloc] initWithObjects:@"Flex", @"AIR", @"Flash", @"Photoshop", @"Illustrator", nil];  
-    arryAppleProducts = [[NSMutableArray alloc] init];
-
-    search_and_update_table (L, arryAppleProducts, workDir, scriptPath, @"local");
-    /* [arryAppleProducts removeAllObjects];
-    int prev_top = lua_gettop(L);
-    int r2 = exec_lua(L, [NSString stringWithFormat:@"return search(\"%@\",\"%@\",\"%s\")", workDir, scriptPath, "local"]);
-    for (int i = 0; i < r2; i ++) {
-        NSString *item = [[NSString alloc] initWithUTF8String: lua_tostring(L, r2 - i)];
-        [arryAppleProducts addObject: item];
-    }
-    lua_pop(L, r2);
-    NSAssert(lua_gettop(L) == prev_top, @"stack depth");
-     */
+    searchResultsArray = [[NSMutableArray alloc] init];
+    
+    [searchbar becomeFirstResponder];
 }
-
 
 
 ////////////
@@ -120,7 +108,7 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 //    NSLog(@"%s", __FUNCTION__);
 	NSAssert (section == 0, @"section");
-	return [arryAppleProducts count];
+	return [searchResultsArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -132,7 +120,7 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
 		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIndentifier] autorelease];
 	}
 	if (indexPath.section == 0) {
-		cell.textLabel.text = [arryAppleProducts objectAtIndex:indexPath.row];
+		cell.textLabel.text = [searchResultsArray objectAtIndex:indexPath.row];
     }
 	return cell;
 }
@@ -150,7 +138,7 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
     NSLog(@"%@", self);
     NSLog(@"%@", workDir);
 
-    search_and_update_table (L, arryAppleProducts, workDir, scriptPath, searchText);    
+    search_and_update_table (L, searchResultsArray, workDir, scriptPath, searchText);    
     [tblview reloadData];
 }
 

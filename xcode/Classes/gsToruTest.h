@@ -14,8 +14,7 @@
     IBOutlet UIView *subview;
     IBOutlet UITableView *tblview;
     IBOutlet UISearchBar *searchbar;
-    NSMutableArray *arryAppleProducts;
-	NSArray *arryAdobeSoftwares;
+    NSMutableArray *searchResultsArray;
 
     lua_State *L;
     NSString *workDir;
