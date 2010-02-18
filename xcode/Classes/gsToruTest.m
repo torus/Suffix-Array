@@ -89,9 +89,8 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
 
     exec_lua(L, [NSString stringWithFormat:@"return mkindex(\"%@\",\"%@\")", workDir, scriptPath]);
 
-    ///////////
     searchResultsArray = [[NSMutableArray alloc] init];
-    
+
     [searchbar becomeFirstResponder];
 }
 
