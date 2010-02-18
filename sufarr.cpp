@@ -70,7 +70,7 @@ struct ltstr_index
 
     bool operator()(size_t i1, const char *key) const
     {
-        std::cerr << __LINE__ << " " << i1 << std::endl;
+//        std::cerr << __LINE__ << " " << i1 << std::endl;
         const char* s1 = source.c_str () + i1;
         const char* s2 = key;
 
@@ -86,7 +86,7 @@ struct gtstr_index
 
     bool operator()(const char *key, size_t i1) const
     {
-        std::cerr << __LINE__ << " " << i1 << std::endl;
+//        std::cerr << __LINE__ << " " << i1 << std::endl;
         const char* s1 = source.c_str () + i1;
         const char* s2 = key;
 

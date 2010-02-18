@@ -53,12 +53,12 @@ static int exec_lua (lua_State *L, NSString *luastat)
 }
 
 static void search_and_update_table (lua_State *L, NSMutableArray *arry,
-                                     NSString *workDir, NSString *scriptPath, NSString *word)
+                                     NSString *workDir, NSString *docPath, NSString *word)
 {
     NSLog(@"%s: word = %@", __FUNCTION__, word);
     [arry removeAllObjects];
     NSLog(@"%s: removed", __FUNCTION__);
-    int r2 = exec_lua(L, [NSString stringWithFormat:@"return search(\"%@\",\"%@\",\"%@\")", workDir, scriptPath, word]);
+    int r2 = exec_lua(L, [NSString stringWithFormat:@"return search(\"%@\",\"%@\",\"%@\")", workDir, docPath, word]);
     NSLog(@"%s: r2 = %d", __FUNCTION__, r2);
     for (int i = 0; i < r2; i ++) {
         NSString *item = [[NSString alloc] initWithUTF8String: lua_tostring(L, r2 - i)];
@@ -87,7 +87,10 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
         NSLog(@"error: %s", err);
     }
 
-    exec_lua(L, [NSString stringWithFormat:@"return mkindex(\"%@\",\"%@\")", workDir, scriptPath]);
+    docPath = [[[NSBundle mainBundle]
+                          pathForResource:@"kjv" ofType:@"txt"] retain];
+
+    exec_lua(L, [NSString stringWithFormat:@"return mkindex(\"%@\",\"%@\")", workDir, docPath]);
 
     searchResultsArray = [[NSMutableArray alloc] init];
 
@@ -137,7 +140,7 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
     NSLog(@"%@", self);
     NSLog(@"%@", workDir);
 
-    search_and_update_table (L, searchResultsArray, workDir, scriptPath, searchText);    
+    search_and_update_table (L, searchResultsArray, workDir, docPath, searchText);    
     [tblview reloadData];
 }
 
