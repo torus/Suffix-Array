@@ -114,15 +114,13 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 //    NSLog(@"%s", __FUNCTION__);
-	return 2;
+	return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 //    NSLog(@"%s", __FUNCTION__);
-	if (section == 0)
-		return [arryAppleProducts count];
-	else
-		return [arryAdobeSoftwares count];
+	NSAssert (section == 0, @"section");
+	return [arryAppleProducts count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -134,19 +132,13 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
 		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIndentifier] autorelease];
 	}
 	if (indexPath.section == 0) {
-		cell.text = [arryAppleProducts objectAtIndex:indexPath.row];
-    } else {
-		cell.text = [arryAdobeSoftwares objectAtIndex:indexPath.row];
+		cell.textLabel.text = [arryAppleProducts objectAtIndex:indexPath.row];
     }
 	return cell;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection: (NSInteger)section {
-//    NSLog(@"%s", __FUNCTION__);
-	if (section == 0)
-		return @"Search Results";
-	else
-		return @"Adobe Softwares";
+	return @"Search Results";
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
