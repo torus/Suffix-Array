@@ -88,7 +88,7 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
     }
 
     docPath = [[[NSBundle mainBundle]
-                          pathForResource:@"kjv" ofType:@"txt"] retain];
+                          pathForResource:@"kjv_mini" ofType:@"txt"] retain];
 
     exec_lua(L, [NSString stringWithFormat:@"return mkindex(\"%@\",\"%@\")", workDir, docPath]);
 
