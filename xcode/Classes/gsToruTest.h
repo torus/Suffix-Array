@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "GameState.h"
-#import "SuffixArray/lua.h"
+#import "lua.h"
 
 @interface gsToruTest : GameState {
     IBOutlet UIView *subview;

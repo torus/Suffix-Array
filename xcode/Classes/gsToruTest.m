@@ -10,9 +10,9 @@
 #import "gsToruTest.h"
 #import "gsMainMenu.h"
 
-#import "SuffixArray/lua.h"
-#import "SuffixArray/lualib.h"
-#import "SuffixArray/lauxlib.h"
+#import "lua.h"
+#import "lualib.h"
+#import "lauxlib.h"
 
 extern int luaopen_sufarr(lua_State* L); // declare the wrapped module
 
