@@ -9,7 +9,7 @@
 #include <string>
 #include <vector>
 
-#include <string.h>
+#include <cstring>
 
 #include "sufarr_c_api.h"
 
@@ -17,7 +17,7 @@ struct ltstr
 {
     bool operator()(const char* s1, const char* s2) const
     {
-        return strcmp(s1, s2) < 0;
+        return strcasecmp(s1, s2) < 0;
     }
 };
 
@@ -74,7 +74,7 @@ struct ltstr_index
         const char* s1 = source.c_str () + i1;
         const char* s2 = key;
 
-        return strcmp(s1, s2) < 0;
+        return strcasecmp(s1, s2) < 0;
     }
 
     const std::string source;
@@ -90,7 +90,7 @@ struct gtstr_index
         const char* s1 = source.c_str () + i1;
         const char* s2 = key;
 
-        return strcmp(s2, s1) < 0;
+        return strcasecmp(s2, s1) < 0;
     }
 
     const std::string source;
