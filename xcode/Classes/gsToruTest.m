@@ -78,7 +78,7 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
     workDir = [[paths objectAtIndex:0] retain];
 
     scriptPath = [[[NSBundle mainBundle]
-                            pathForResource:@"test" ofType:@"lua"] retain];
+                            pathForResource:@"sufarr" ofType:@"lua"] retain];
 
     int res = luaL_dofile(L, [scriptPath cStringUsingEncoding:NSASCIIStringEncoding]);
     NSLog(@"lua: returned %d", res);
