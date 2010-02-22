@@ -442,9 +442,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* Chapter3 Framework */ = {
+		1D6058900D05DD3D006BFB54 /* Bible Search */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Chapter3 Framework" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Bible Search" */;
 			buildPhases = (
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				9CC9B386113237F400961340 /* CopyFiles */,
@@ -456,7 +456,7 @@
 			);
 			dependencies = (
 			);
-			name = "Chapter3 Framework";
+			name = "Bible Search";
 			productName = "Chapter3 Framework";
 			productReference = 1D6058910D05DD3D006BFB54 /* Chapter3 Framework.app */;
 			productType = "com.apple.product-type.application";
@@ -473,7 +473,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* Chapter3 Framework */,
+				1D6058900D05DD3D006BFB54 /* Bible Search */,
 			);
 		};
 /* End PBXProject section */
@@ -647,7 +647,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Chapter3 Framework" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Bible Search" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
