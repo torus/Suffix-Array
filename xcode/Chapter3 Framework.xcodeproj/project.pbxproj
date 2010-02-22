@@ -253,7 +253,6 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				9C985980111E56CB00B44B29 /* torutest.xib */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -273,10 +272,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				9CC9B35F1132351C00961340 /* kjv_mini.idx */,
 				9CC9B32B1131291400961340 /* indexer.lua */,
 				9CC9B2A8112D2B3800961340 /* kjv.txt */,
 				9CC9B33B11312CA500961340 /* kjv_mini.txt */,
+				9CC9B35F1132351C00961340 /* kjv_mini.idx */,
 				9B8D8BE510E079AA005FB7EC /* storagetest.xib */,
 				9B8D8BBB10E074BB005FB7EC /* social.mp3 */,
 				7F94D1020FA96EE900A02C11 /* Textures */,
@@ -286,6 +285,7 @@
 				8D1107310486CEB800E47090 /* Info.plist */,
 				9B8D8BC210E0754B005FB7EC /* soundtest.xib */,
 				9B8D8C0B10E0810E005FB7EC /* gsmainmenu.xib */,
+				9C985980111E56CB00B44B29 /* torutest.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -466,6 +466,9 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Kronecker's Delta";
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Chapter3 Framework" */;
 			compatibilityVersion = "Xcode 3.1";
 			hasScannedForEncodings = 1;
