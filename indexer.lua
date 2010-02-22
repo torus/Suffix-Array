@@ -9,13 +9,13 @@ function loadindex (idxfile, srcfile)
    idx = sufarr.load_index (idxfile, srcfile)
 end
 
-function search (dir, file, word)
+function search (srcfile, word)
    local lb = sufarr.search_lower_bound (idx, word)
    local ub = sufarr.search_upper_bound (idx, word)
 
    print (string.format ("%s - %s", lb, ub))
 
-   local f = io.open (file)
+   local f = io.open (srcfile)
 
    local results = {}
 

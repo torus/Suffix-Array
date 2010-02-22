@@ -53,12 +53,12 @@ static int exec_lua (lua_State *L, NSString *luastat)
 }
 
 static void search_and_update_table (lua_State *L, NSMutableArray *arry,
-                                     NSString *workDir, NSString *docPath, NSString *word)
+                                     NSString *docPath, NSString *word)
 {
     NSLog(@"%s: word = %@", __FUNCTION__, word);
     [arry removeAllObjects];
     NSLog(@"%s: removed", __FUNCTION__);
-    int r2 = exec_lua(L, [NSString stringWithFormat:@"return search(\"%@\",\"%@\",\"%@\")", workDir, docPath, word]);
+    int r2 = exec_lua(L, [NSString stringWithFormat:@"return search(\"%@\",\"%@\")", docPath, word]);
     NSLog(@"%s: r2 = %d", __FUNCTION__, r2);
     for (int i = 0; i < r2; i ++) {
         NSString *item = [[NSString alloc] initWithUTF8String: lua_tostring(L, r2 - i)];
@@ -140,10 +140,9 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
 - (void) searchAndUpdate: (NSString*) searchText {
     NSLog(@"%s", __FUNCTION__);
     NSLog(@"%@", self);
-    NSLog(@"%@", workDir);
     NSLog(@"%@", docPath);
 
-    search_and_update_table (L, searchResultsArray, workDir, docPath, searchText);    
+    search_and_update_table (L, searchResultsArray, docPath, searchText);    
     [tblview reloadData];
 }
 
