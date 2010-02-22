@@ -73,8 +73,23 @@
 		9C9A72AC11276A4100F692D6 /* sufarr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A725C11276A4100F692D6 /* sufarr.cpp */; };
 		9C9A74251129324C00F692D6 /* sufarr_wrap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A74241129324C00F692D6 /* sufarr_wrap.cpp */; };
 		9CC9B32C1131291400961340 /* indexer.lua in Resources */ = {isa = PBXBuildFile; fileRef = 9CC9B32B1131291400961340 /* indexer.lua */; };
-		9CC9B33C11312CA500961340 /* kjv_mini.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9CC9B33B11312CA500961340 /* kjv_mini.txt */; };
+		9CC9B33C11312CA500961340 /* kjv_mini.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CC9B33B11312CA500961340 /* kjv_mini.txt */; };
+		9CC9B3601132351C00961340 /* kjv_mini.idx in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CC9B35F1132351C00961340 /* kjv_mini.idx */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9CC9B386113237F400961340 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Documents;
+			dstSubfolderSpec = 7;
+			files = (
+				9CC9B33C11312CA500961340 /* kjv_mini.txt in CopyFiles */,
+				9CC9B3601132351C00961340 /* kjv_mini.idx in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -182,13 +197,12 @@
 		9C9A724511276A4000F692D6 /* print.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = print.c; sourceTree = "<group>"; };
 		9C9A725B11276A4100F692D6 /* sufarr_c_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sufarr_c_api.h; path = ../sufarr_c_api.h; sourceTree = SOURCE_ROOT; };
 		9C9A725C11276A4100F692D6 /* sufarr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sufarr.cpp; path = ../sufarr.cpp; sourceTree = SOURCE_ROOT; };
-		9C9A73841127B08400F692D6 /* test.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = test.lua; path = ../test.lua; sourceTree = SOURCE_ROOT; };
 		9C9A74241129324C00F692D6 /* sufarr_wrap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sufarr_wrap.cpp; sourceTree = "<group>"; };
 		9C9A742D112932EF00F692D6 /* malloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = malloc.h; sourceTree = "<group>"; };
 		9CC9B2A8112D2B3800961340 /* kjv.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = kjv.txt; path = Resources/kjv.txt; sourceTree = "<group>"; };
-		9CC9B31711311C7700961340 /* sufarr.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sufarr.lua; path = ../sufarr.lua; sourceTree = SOURCE_ROOT; };
 		9CC9B32B1131291400961340 /* indexer.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = indexer.lua; path = ../indexer.lua; sourceTree = SOURCE_ROOT; };
 		9CC9B33B11312CA500961340 /* kjv_mini.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = kjv_mini.txt; path = Resources/kjv_mini.txt; sourceTree = "<group>"; };
+		9CC9B35F1132351C00961340 /* kjv_mini.idx */ = {isa = PBXFileReference; lastKnownFileType = file; name = kjv_mini.idx; path = Resources/kjv_mini.idx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,10 +248,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				9CC9B33B11312CA500961340 /* kjv_mini.txt */,
-				9CC9B32B1131291400961340 /* indexer.lua */,
-				9CC9B31711311C7700961340 /* sufarr.lua */,
-				9CC9B2A8112D2B3800961340 /* kjv.txt */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -263,7 +273,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				9C9A73841127B08400F692D6 /* test.lua */,
+				9CC9B35F1132351C00961340 /* kjv_mini.idx */,
+				9CC9B32B1131291400961340 /* indexer.lua */,
+				9CC9B2A8112D2B3800961340 /* kjv.txt */,
+				9CC9B33B11312CA500961340 /* kjv_mini.txt */,
 				9B8D8BE510E079AA005FB7EC /* storagetest.xib */,
 				9B8D8BBB10E074BB005FB7EC /* social.mp3 */,
 				7F94D1020FA96EE900A02C11 /* Textures */,
@@ -434,6 +447,7 @@
 			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Chapter3 Framework" */;
 			buildPhases = (
 				1D60588D0D05DD3D006BFB54 /* Resources */,
+				9CC9B386113237F400961340 /* CopyFiles */,
 				9C9A740911292F4600F692D6 /* ShellScript */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
@@ -480,7 +494,6 @@
 				9B8D8C0C10E0810E005FB7EC /* gsmainmenu.xib in Resources */,
 				9C985981111E56CB00B44B29 /* torutest.xib in Resources */,
 				9CC9B32C1131291400961340 /* indexer.lua in Resources */,
-				9CC9B33C11312CA500961340 /* kjv_mini.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

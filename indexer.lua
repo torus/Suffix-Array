@@ -1,10 +1,12 @@
 local idx
 
-function mkindex (dir, file)
-   local idxer = sufarr.create_indexer (file)
-   sufarr.save_index (idxer, dir .. "/luatest.idx")
+function mkindex (idxfile, srcfile)
+   local idxer = sufarr.create_indexer (srcfile)
+   sufarr.save_index (idxer, idxfile)
+end
 
-   idx = sufarr.load_index (dir .. "/luatest.idx", file)
+function loadindex (idxfile, srcfile)
+   idx = sufarr.load_index (idxfile, srcfile)
 end
 
 function search (dir, file, word)

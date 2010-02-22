@@ -74,8 +74,9 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
     luaL_openlibs (L);
     luaopen_sufarr (L);
 
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    workDir = [[paths objectAtIndex:0] retain];
+//    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+//    workDir = [[paths objectAtIndex:0] retain];
+    workDir = [[[NSBundle mainBundle] bundlePath] retain];
 
     scriptPath = [[[NSBundle mainBundle]
                             pathForResource:@"indexer" ofType:@"lua"] retain];
@@ -87,10 +88,11 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
         NSLog(@"error: %s", err);
     }
 
-    docPath = [[[NSBundle mainBundle]
-                          pathForResource:@"kjv_mini" ofType:@"txt"] retain];
+    docPath = [[workDir stringByAppendingPathComponent:@"kjv_mini.txt"] retain];
+    NSString *idxfile = [workDir stringByAppendingPathComponent:@"kjv_mini.idx"];
 
-    exec_lua(L, [NSString stringWithFormat:@"return mkindex(\"%@\",\"%@\")", workDir, docPath]);
+//    exec_lua(L, [NSString stringWithFormat:@"mkindex(\"%@\",\"%@\")", idxfile, docPath]);
+    exec_lua(L, [NSString stringWithFormat:@"loadindex(\"%@\",\"%@\")", idxfile, docPath]);
 
     searchResultsArray = [[NSMutableArray alloc] init];
 
@@ -139,6 +141,7 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
     NSLog(@"%s", __FUNCTION__);
     NSLog(@"%@", self);
     NSLog(@"%@", workDir);
+    NSLog(@"%@", docPath);
 
     search_and_update_table (L, searchResultsArray, workDir, docPath, searchText);    
     [tblview reloadData];
