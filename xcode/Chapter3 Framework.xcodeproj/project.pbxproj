@@ -81,7 +81,7 @@
 		9CC9B386113237F400961340 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = Documents;
+			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
 				9CC9B33C11312CA500961340 /* kjv_mini.txt in CopyFiles */,
