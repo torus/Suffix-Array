@@ -12,20 +12,21 @@ end
 function search (srcfile, word)
    local lb = sufarr.search_lower_bound (idx, word)
    local ub = sufarr.search_upper_bound (idx, word)
-
-   print (string.format ("%s - %s", lb, ub))
-
    local f = io.open (srcfile)
-
    local results = {}
 
    local i = lb
    while i < ub do
-      local p = sufarr.get_position (idx, i)
+      local pos = sufarr.get_position (idx, i)
+      local p = math.max (0, pos - 5)
+
       f:seek ("set", p)
-      local str = f:read ()
-      print (string.format ("%d: %s", p, str))
-      table.insert (results, str)
+      local line
+      while not (f:seek () > pos) do
+         line = f:read ()
+      end
+
+      table.insert (results, line)
       i = i + 1
       if i > lb + 10 then
          break
