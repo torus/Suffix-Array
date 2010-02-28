@@ -23,7 +23,7 @@ extern int luaopen_sufarr(lua_State* L); // declare the wrapped module
 	if(self = [super initWithFrame:frame andManager:pManager]) {
 		//load the storagetest.xib file here.
 		//this will instantiate the 'subview' uiview.
-		[[NSBundle mainBundle] loadNibNamed:@"torutest" owner:self options:nil];
+		[[NSBundle mainBundle] loadNibNamed:@"SearchScreen" owner:self options:nil];
 		//add subview as... a subview.
 		//this will let everything from the nib file show up on screen.
 		[self addSubview:subview];
