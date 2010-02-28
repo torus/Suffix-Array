@@ -38,7 +38,7 @@
 	[m_pManager doStateChange:[gsStorageTest class]];
 }
 
-- (IBAction) doToruTest {
+- (IBAction) doSearch {
 	[m_pManager doStateChange:[gsSearchScreen class]];
 }
 

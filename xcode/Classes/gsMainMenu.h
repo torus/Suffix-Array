@@ -17,6 +17,6 @@
 - (IBAction) doSoundTest;
 - (IBAction) doStorageTest;
 
-- (IBAction) doToruTest;
+- (IBAction) doSearch;
 
 @end
