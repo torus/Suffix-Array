@@ -9,7 +9,7 @@
 #import "gsSoundTest.h"
 #import "gsTextureTest.h"
 #import "gsStorageTest.h"
-#import "gsToruTest.h"
+#import "gsSearchScreen.h"
 
 @implementation gsMainMenu
 
@@ -39,7 +39,7 @@
 }
 
 - (IBAction) doToruTest {
-	[m_pManager doStateChange:[gsToruTest class]];
+	[m_pManager doStateChange:[gsSearchScreen class]];
 }
 
 @end

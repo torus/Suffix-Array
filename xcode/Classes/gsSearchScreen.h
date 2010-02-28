@@ -10,7 +10,7 @@
 #import "GameState.h"
 #import "lua.h"
 
-@interface gsToruTest : GameState {
+@interface gsSearchScreen : GameState {
     IBOutlet UIView *subview;
     IBOutlet UITableView *tblview;
     IBOutlet UISearchBar *searchbar;

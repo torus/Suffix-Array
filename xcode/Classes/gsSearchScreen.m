@@ -7,7 +7,7 @@
 //
 
 #import "ResourceManager.h"
-#import "gsToruTest.h"
+#import "gsSearchScreen.h"
 #import "gsMainMenu.h"
 
 #import "lua.h"
@@ -16,9 +16,9 @@
 
 extern int luaopen_sufarr(lua_State* L); // declare the wrapped module
 
-@implementation gsToruTest
+@implementation gsSearchScreen
 
--(gsToruTest*) initWithFrame:(CGRect)frame andManager:(GameStateManager*)pManager 
+-(gsSearchScreen*) initWithFrame:(CGRect)frame andManager:(GameStateManager*)pManager 
 {
 	if(self = [super initWithFrame:frame andManager:pManager]) {
 		//load the storagetest.xib file here.
