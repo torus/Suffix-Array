@@ -57,7 +57,8 @@ function lower_bound (idxf, srcf, size, word)
       local pos = get_str_pos (idxf, m)
       local str = get_str (pos, srcf, len)
 
-      -- print (string.format ("str: %s, word: %s, pos: %d", str, word, pos))
+      -- print (string.format ("str: %s, word: %s, pos: %d",
+      --                       tostring (str), word, pos))
 
       if str:lower () < word:lower () then
          n1 = m

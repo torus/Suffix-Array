@@ -19,6 +19,7 @@
     lua_State *L;
     NSString *workDir;
     NSString *scriptPath;
+    NSString *idxPath;
     NSString *docPath;
 }
 

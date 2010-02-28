@@ -36,13 +36,13 @@ extern int luaopen_sufarr(lua_State* L); // declare the wrapped module
 
 static int exec_lua (lua_State *L, NSString *luastat)
 {
-    NSLog(@"statement: %@", luastat);
+//    NSLog(@"statement: %@", luastat);
 
     const char *str = [luastat cStringUsingEncoding:NSASCIIStringEncoding];
     int top = lua_gettop(L);
     int res2 = (luaL_loadstring(L, str) || lua_pcall(L, 0, LUA_MULTRET, 0));
 
-    NSLog(@"lua: returned %d, top: %d -> %d", res2, top, lua_gettop(L));
+//    NSLog(@"lua: returned %d, top: %d -> %d", res2, top, lua_gettop(L));
     if (res2) {
         const char* err = lua_tostring(L, -1);
         NSLog(@"error: %s", err);
@@ -53,13 +53,14 @@ static int exec_lua (lua_State *L, NSString *luastat)
 }
 
 static void search_and_update_table (lua_State *L, NSMutableArray *arry,
-                                     NSString *docPath, NSString *word)
+                                     NSString *idxPath, NSString *docPath, NSString *word)
 {
-    NSLog(@"%s: word = %@", __FUNCTION__, word);
+//    NSLog(@"%s: word = %@", __FUNCTION__, word);
     [arry removeAllObjects];
-    NSLog(@"%s: removed", __FUNCTION__);
-    int r2 = exec_lua(L, [NSString stringWithFormat:@"return search(\"%@\",\"%@\")", docPath, word]);
-    NSLog(@"%s: r2 = %d", __FUNCTION__, r2);
+//    NSLog(@"%s: removed", __FUNCTION__);
+    int r2 = exec_lua(L, [NSString stringWithFormat:@"return search_on_file(\"%@\",\"%@\",\"%@\")", idxPath, docPath, word]);
+//    int r2 = exec_lua(L, [NSString stringWithFormat:@"return search(\"%@\",\"%@\")", docPath, word]);
+//    NSLog(@"%s: r2 = %d", __FUNCTION__, r2);
     for (int i = 0; i < r2; i ++) {
         NSString *item = [[NSString alloc] initWithUTF8String: lua_tostring(L, r2 - i)];
         [arry addObject: item];
@@ -88,11 +89,11 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
         NSLog(@"error: %s", err);
     }
 
-    docPath = [[workDir stringByAppendingPathComponent:@"kjv_mini.txt"] retain];
-    NSString *idxfile = [workDir stringByAppendingPathComponent:@"kjv_mini.idx"];
+    docPath = [[workDir stringByAppendingPathComponent:@"kjv.txt"] retain];
+    idxPath = [[workDir stringByAppendingPathComponent:@"kjv.idx"] retain];
 
 //    exec_lua(L, [NSString stringWithFormat:@"mkindex(\"%@\",\"%@\")", idxfile, docPath]);
-    exec_lua(L, [NSString stringWithFormat:@"loadindex(\"%@\",\"%@\")", idxfile, docPath]);
+//    exec_lua(L, [NSString stringWithFormat:@"loadindex(\"%@\",\"%@\")", idxfile, docPath]);
 
     searchResultsArray = [[NSMutableArray alloc] init];
 
@@ -138,11 +139,12 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
 }
 
 - (void) searchAndUpdate: (NSString*) searchText {
-    NSLog(@"%s", __FUNCTION__);
+/*    NSLog(@"%s", __FUNCTION__);
     NSLog(@"%@", self);
     NSLog(@"%@", docPath);
-
-    search_and_update_table (L, searchResultsArray, docPath, searchText);    
+    NSLog(@"%@", idxPath);
+*/
+    search_and_update_table (L, searchResultsArray, idxPath, docPath, searchText);    
     [tblview reloadData];
 }
 
