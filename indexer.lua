@@ -86,29 +86,23 @@ function get_position_lua (idxf, i)
    return pos
 end
 
-function search_on_file (idxfile, srcfile, word)
-   -- binary search
-   local idxf = io.open (idxfile)
-   local srcf = io.open (srcfile)
+function search_range (idxf, srcf, word)
    local size = idxf:seek ("end") / 4
-
    local lb = lower_bound (idxf, srcf, size, word)
    local ub = lower_bound (idxf, srcf, size, word .. "\255")
 
-   -- print (string.format ("lb: %d, ub: %d", lb, ub))
+   return lb, ub
+end
 
+function get_result_texts (idxf, srcf, lb, ub)
    local results = {}
 
    local i = lb
    while i < ub do
       local pos = get_position_lua (idxf, i)
-      local p = math.max (0, pos - 5)
 
-      srcf:seek ("set", p)
-      local line
-      while not (srcf:seek () > pos) do
-         line = srcf:read ()
-      end
+      srcf:seek ("set", pos)
+      local line = srcf:read ()
 
       table.insert (results, line)
       i = i + 1
@@ -120,6 +114,49 @@ function search_on_file (idxfile, srcfile, word)
    return unpack (results)
 end
 
+local newline_lb, newline_ub
+
+function search_begin_of_paragraph_on_file (idxf, srcf, pos)
+   if not newline_lb then
+      newline_lb, newline_ub = search_range (idxf, srcf, "\n")
+   end
+
+   local maxpos = 0
+
+   local i = newline_lb
+   while i < newline_ub do
+      local p = get_position_lua (idxf, i) + 1
+      if p > pos then
+      else
+         if p == pos then
+            return p
+         else
+            if maxpos < p then
+               maxpos = p
+            end
+         end
+      end
+
+      i = i + 1
+   end
+
+   return maxpos
+end
+
+function search_on_file (idxfile, srcfile, word)
+   if word == "" then
+      return
+   end
+
+   -- binary search
+   local idxf = io.open (idxfile)
+   local srcf = io.open (srcfile)
+
+   local lb, ub = search_range (idxf, srcf, word)
+
+   return get_result_texts (idxf, srcf, lb, ub)
+end
+
 function search (srcfile, word)
    local lb = sufarr.search_lower_bound (idx, word)
    local ub = sufarr.search_upper_bound (idx, word)
@@ -127,18 +164,15 @@ function search (srcfile, word)
    -- print (string.format ("lb: %d, ub: %d", lb, ub))
 
    local f = io.open (srcfile)
+
    local results = {}
 
    local i = lb
    while i < ub do
       local pos = sufarr.get_position (idx, i)
-      local p = math.max (0, pos - 5)
 
-      f:seek ("set", p)
-      local line
-      while not (f:seek () > pos) do
-         line = f:read ()
-      end
+      f:seek ("set", pos)
+      local line = f:read ()
 
       table.insert (results, line)
       i = i + 1
@@ -146,6 +180,8 @@ function search (srcfile, word)
          break
       end
    end
+
+   f:close ()
 
    return unpack (results)
 end
