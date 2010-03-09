@@ -10,6 +10,7 @@
 #import "gsTextureTest.h"
 #import "gsStorageTest.h"
 #import "gsSearchScreen.h"
+#import "gsTextScreen.h"
 
 @implementation gsMainMenu
 
@@ -40,6 +41,10 @@
 
 - (IBAction) doSearch {
 	[m_pManager doStateChange:[gsSearchScreen class]];
+}
+
+- (IBAction) showText {
+    [m_pManager doStateChange:[gsTextScreen class]];
 }
 
 @end

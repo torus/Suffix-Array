@@ -13,6 +13,9 @@
 @interface gsTextScreen : GameState {
     IBOutlet UIView *subview;
     IBOutlet UINavigationBar *navbar;
+    IBOutlet UINavigationItem *titleview;
+    IBOutlet UITextView *textview;
 }
 
+- (IBAction) backToSearch;
 @end

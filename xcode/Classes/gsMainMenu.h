@@ -18,5 +18,6 @@
 - (IBAction) doStorageTest;
 
 - (IBAction) doSearch;
+- (IBAction) showText;
 
 @end

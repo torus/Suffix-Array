@@ -75,7 +75,7 @@
 		9C9A729711276A4100F692D6 /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A724511276A4000F692D6 /* print.c */; };
 		9C9A72AC11276A4100F692D6 /* sufarr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A725C11276A4100F692D6 /* sufarr.cpp */; };
 		9C9A74251129324C00F692D6 /* sufarr_wrap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A74241129324C00F692D6 /* sufarr_wrap.cpp */; };
-		9CB5395A113A634C0052DC5C /* TextScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CB53959113A634C0052DC5C /* TextScreen.xib */; };
+		9CB539B4113B706D0052DC5C /* TextScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CB539B3113B706D0052DC5C /* TextScreen.xib */; };
 		9CC9B32C1131291400961340 /* indexer.lua in Resources */ = {isa = PBXBuildFile; fileRef = 9CC9B32B1131291400961340 /* indexer.lua */; };
 		9CC9B33C11312CA500961340 /* kjv_mini.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CC9B33B11312CA500961340 /* kjv_mini.txt */; };
 		9CC9B3601132351C00961340 /* kjv_mini.idx in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CC9B35F1132351C00961340 /* kjv_mini.idx */; };
@@ -208,7 +208,7 @@
 		9C9A725C11276A4100F692D6 /* sufarr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sufarr.cpp; path = ../sufarr.cpp; sourceTree = SOURCE_ROOT; };
 		9C9A74241129324C00F692D6 /* sufarr_wrap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sufarr_wrap.cpp; sourceTree = "<group>"; };
 		9C9A742D112932EF00F692D6 /* malloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = malloc.h; sourceTree = "<group>"; };
-		9CB53959113A634C0052DC5C /* TextScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextScreen.xib; sourceTree = "<group>"; };
+		9CB539B3113B706D0052DC5C /* TextScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextScreen.xib; sourceTree = "<group>"; };
 		9CC9B2A8112D2B3800961340 /* kjv.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = kjv.txt; path = Resources/kjv.txt; sourceTree = "<group>"; };
 		9CC9B32B1131291400961340 /* indexer.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = indexer.lua; path = ../indexer.lua; sourceTree = SOURCE_ROOT; };
 		9CC9B33B11312CA500961340 /* kjv_mini.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = kjv_mini.txt; path = Resources/kjv_mini.txt; sourceTree = "<group>"; };
@@ -263,7 +263,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				9CB53959113A634C0052DC5C /* TextScreen.xib */,
+				9CB539B3113B706D0052DC5C /* TextScreen.xib */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -511,7 +511,7 @@
 				9B8D8C0C10E0810E005FB7EC /* gsmainmenu.xib in Resources */,
 				9C985981111E56CB00B44B29 /* SearchScreen.xib in Resources */,
 				9CC9B32C1131291400961340 /* indexer.lua in Resources */,
-				9CB5395A113A634C0052DC5C /* TextScreen.xib in Resources */,
+				9CB539B4113B706D0052DC5C /* TextScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
