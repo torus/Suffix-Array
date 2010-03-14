@@ -135,7 +135,9 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"%s", __FUNCTION__);
+    NSUInteger len = [indexPath length];
+    NSUInteger index = [indexPath indexAtPosition:len - 1];
+    NSLog(@"%s, %d, %d", __FUNCTION__, len, index);
 }
 
 - (void) searchAndUpdate: (NSString*) searchText {
