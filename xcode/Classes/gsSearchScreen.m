@@ -46,7 +46,7 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
 //    NSLog(@"%s: r2 = %d", __FUNCTION__, r2);
     for (int i = 0; i < r2; i ++) {
         NSString *item = [[NSString alloc] initWithUTF8String: lua_tostring(L, r2 - i)];
-        [arry addObject: item];
+        [arry insertObject:item atIndex:0];
     }
     lua_pop(L, r2);
 }
