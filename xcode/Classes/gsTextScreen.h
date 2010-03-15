@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "GameState.h"
-#import "lua.h"
 
 @interface gsTextScreen : GameState {
     IBOutlet UIView *subview;

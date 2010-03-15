@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "GameState.h"
-#import "lua.h"
 
 @interface gsSearchScreen : GameState {
     IBOutlet UIView *subview;
@@ -16,9 +15,7 @@
     IBOutlet UISearchBar *searchbar;
     NSMutableArray *searchResultsArray;
 
-    lua_State *L;
     NSString *workDir;
-    NSString *scriptPath;
     NSString *idxPath;
     NSString *docPath;
 }

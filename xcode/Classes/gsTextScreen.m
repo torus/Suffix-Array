@@ -9,6 +9,7 @@
 #import "ResourceManager.h"
 #import "gsTextScreen.h"
 #import "gsSearchScreen.h"
+#import "globalLuaState.h"
 
 @implementation gsTextScreen
 
@@ -24,10 +25,25 @@
 	}
 	//load the last saved state of the toggle switch.
     NSLog(@"%s", __FUNCTION__);
-    
-    titleview.title = @"hoge";
-    titleview.backBarButtonItem.title = @"Back to Search";
-    textview.text = @"ananan";
+
+    if (!L) {
+        initialize_lua();
+    }
+
+    int r = exec_lua(L, @"return get_paragraph()");
+    NSString *title, *body;
+    if (r > 1) {
+        title = [[NSString stringWithCString:lua_tostring(L, 1)
+                                    encoding:NSUTF8StringEncoding] retain];
+        body = [[NSString stringWithCString:lua_tostring(L, 2)
+                                    encoding:NSUTF8StringEncoding] retain];
+        lua_pop(L, r);
+    }
+
+    titleview.title = title;
+    titleview.leftBarButtonItem.title = @"Back to Serch";
+    //titleview.backBarButtonItem.title = @"Back to Search";
+    textview.text = body;
 
     return self;
 }

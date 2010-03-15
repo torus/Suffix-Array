@@ -8,13 +8,14 @@
 
 #import "ResourceManager.h"
 #import "gsSearchScreen.h"
+#import "gsTextScreen.h"
 #import "gsMainMenu.h"
+#import "globalLuaState.h"
 
 #import "lua.h"
 #import "lualib.h"
 #import "lauxlib.h"
 
-extern int luaopen_sufarr(lua_State* L); // declare the wrapped module
 
 @implementation gsSearchScreen
 
@@ -32,24 +33,6 @@ extern int luaopen_sufarr(lua_State* L); // declare the wrapped module
 	[self runTests];
 
 	return self;
-}
-
-static int exec_lua (lua_State *L, NSString *luastat)
-{
-//    NSLog(@"statement: %@", luastat);
-
-    const char *str = [luastat cStringUsingEncoding:NSASCIIStringEncoding];
-    int top = lua_gettop(L);
-    int res2 = (luaL_loadstring(L, str) || lua_pcall(L, 0, LUA_MULTRET, 0));
-
-//    NSLog(@"lua: returned %d, top: %d -> %d", res2, top, lua_gettop(L));
-    if (res2) {
-        const char* err = lua_tostring(L, -1);
-        NSLog(@"error: %s", err);
-        return 0;
-    } else {
-        return lua_gettop(L) - top;
-    }
 }
 
 static void search_and_update_table (lua_State *L, NSMutableArray *arry,
@@ -71,22 +54,12 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
 -(void) runTests {
     NSLog(@"runTests!");
 
-    L = lua_open ();
-    luaL_openlibs (L);
-    luaopen_sufarr (L);
-
 //    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
 //    workDir = [[paths objectAtIndex:0] retain];
     workDir = [[[NSBundle mainBundle] bundlePath] retain];
 
-    scriptPath = [[[NSBundle mainBundle]
-                            pathForResource:@"indexer" ofType:@"lua"] retain];
-
-    int res = luaL_dofile(L, [scriptPath cStringUsingEncoding:NSASCIIStringEncoding]);
-    NSLog(@"lua: returned %d", res);
-    if (res) {
-        const char* err = lua_tostring(L, -1);
-        NSLog(@"error: %s", err);
+    if (!L) {
+        initialize_lua();
     }
 
     docPath = [[workDir stringByAppendingPathComponent:@"kjv.txt"] retain];
@@ -138,6 +111,8 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
     NSUInteger len = [indexPath length];
     NSUInteger index = [indexPath indexAtPosition:len - 1];
     NSLog(@"%s, %d, %d", __FUNCTION__, len, index);
+    exec_lua(L, [NSString stringWithFormat:@"select_item(\"%@\", \"%@\", %d)", idxPath, docPath, index]);
+    [m_pManager doStateChange:[gsTextScreen class]];
 }
 
 - (void) searchAndUpdate: (NSString*) searchText {

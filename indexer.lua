@@ -1,5 +1,31 @@
-local idx
--- local idxfile
+local idx                       -- used in search
+local last_title
+local last_body
+local last_pos_list = {}
+
+function get_paragraph ()
+   return last_title or "HOGE Title", last_body or "body body body"
+end
+
+function select_item (idxfile, srcfile, n)        -- n: 0 origin
+   print ("selected: " .. n)
+   local pos = last_pos_list[n + 1]
+   if pos then
+      local srcf = io.open (srcfile)
+      local idxf = io.open (idxfile)
+
+      local beginpos = search_begin_of_paragraph_on_file (idxf, srcf, pos)
+
+      print ("pos: " .. pos .. " beginpos: " .. beginpos)
+
+      srcf:seek ("set", beginpos)
+      local line = srcf:read ()
+      last_title, last_body = line:match ("^(.-) (.*)$")
+
+      srcf:close ()
+      idxf:close ()
+   end
+end
 
 function mkindex (idxfile, srcfile)
    local idxer = sufarr.create_indexer (srcfile)
@@ -16,11 +42,6 @@ function get_str_pos (idxf, m)
    local c = idxf:read (4)
    -- print (string.format ("c: %q", c))
    local c1, c2, c3, c4 = c:byte (1, 4)
-
-   -- if c1 < 0 then c1 = 256 + c1 end
-   -- if c2 < 0 then c2 = 256 + c2 end
-   -- if c3 < 0 then c3 = 256 + c3 end
-   -- if c4 < 0 then c4 = 256 + c4 end
 
    local pos = c1 * 0x1000000 + c2 * 0x10000 + c3 * 0x100 + c4
 
@@ -95,6 +116,7 @@ function search_range (idxf, srcf, word)
 end
 
 function get_result_texts (idxf, srcf, lb, ub)
+   local positions = {}
    local results = {}
 
    local i = lb
@@ -105,13 +127,14 @@ function get_result_texts (idxf, srcf, lb, ub)
       local line = srcf:read ()
 
       table.insert (results, line)
+      table.insert (positions, pos)
       i = i + 1
       if i > lb + 10 then
          break
       end
    end
 
-   return unpack (results)
+   return positions, results
 end
 
 local newline_lb, newline_ub
@@ -143,6 +166,7 @@ function search_begin_of_paragraph_on_file (idxf, srcf, pos)
    return maxpos
 end
 
+-- search seeking on file
 function search_on_file (idxfile, srcfile, word)
    if word == "" then
       return
@@ -154,7 +178,12 @@ function search_on_file (idxfile, srcfile, word)
 
    local lb, ub = search_range (idxf, srcf, word)
 
-   return get_result_texts (idxf, srcf, lb, ub)
+   local pos_list, text_list = get_result_texts (idxf, srcf, lb, ub)
+   last_pos_list = pos_list
+
+   idxf:close ()
+   srcf:close ()
+   return unpack (text_list)
 end
 
 function search (srcfile, word)
