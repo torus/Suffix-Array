@@ -7,14 +7,15 @@ function get_paragraph ()
    return last_title or "HOGE Title", last_body or "body body body"
 end
 
-function select_item (idxfile, srcfile, n)        -- n: 0 origin
+function select_item (pidxfile, srcfile, n)        -- n: 0 origin
    print ("selected: " .. n)
    local pos = last_pos_list[n + 1]
    if pos then
       local srcf = io.open (srcfile)
-      local idxf = io.open (idxfile)
+      local pidxf = io.open (pidxfile)
 
-      local beginpos = search_begin_of_paragraph_on_file (idxf, srcf, pos)
+      -- local beginpos = search_begin_of_paragraph_on_file (idxf, srcf, pos)
+      local beginpos = lower_bound_paragraph (pidxf, pos)
 
       print ("pos: " .. pos .. " beginpos: " .. beginpos)
 
@@ -23,13 +24,39 @@ function select_item (idxfile, srcfile, n)        -- n: 0 origin
       last_title, last_body = line:match ("^(.-) (.*)$")
 
       srcf:close ()
-      idxf:close ()
+      pidxf:close ()
    end
 end
 
-function mkindex (idxfile, srcfile)
+function mk_paragraph_index (idxf, srcf)
+   local lb, ub = search_range (idxf, srcf, "\n")
+
+   local dest = {0}             -- 0: beginning of the document
+   for i = lb, ub - 1 do
+      local pos = get_position_lua (idxf, i)
+      table.insert (dest, pos)
+   end
+   table.sort (dest)
+
+   return dest
+end
+
+function mkindex (pidxfile, idxfile, srcfile)
    local idxer = sufarr.create_indexer (srcfile)
    sufarr.save_index (idxer, idxfile)
+
+   local idxf = io.open (idxfile)
+   local srcf = io.open (srcfile)
+
+   local pidx = mk_paragraph_index (idxf, srcf)
+   local pidxf = io.open (pidxfile, "wb")
+   for i, p in ipairs (pidx) do
+      pidxf:write (sufarr.pack_pos (p + 1))
+   end
+
+   pidxf:close ()
+   idxf:close ()
+   srcf:close ()
 end
 
 function loadindex (idxfile_, srcfile)
@@ -43,6 +70,11 @@ function get_str_pos (idxf, m)
    -- print (string.format ("c: %q", c))
    local c1, c2, c3, c4 = c:byte (1, 4)
 
+   assert (c1 >= 0)
+   assert (c2 >= 0)
+   assert (c3 >= 0)
+   assert (c4 >= 0)
+
    local pos = c1 * 0x1000000 + c2 * 0x10000 + c3 * 0x100 + c4
 
    return pos
@@ -53,6 +85,50 @@ function get_str (pos, srcf, len)
    local str = srcf:read (len)
 
    return str
+end
+
+function lower_bound_paragraph (pidxf, pos)
+   local m, mpos
+   local size = pidxf:seek ("end") / 4
+   local n1, n2 = 1, size + 1
+
+   -- print (string.format ("lower_bound_paragraph: %d, %d", size, pos))
+
+   while true do
+      assert (n1 < n2)
+
+      -- lower bound = minimum x; str(x) < word
+      if math.fmod (size, 2) == 0 then
+         -- even
+         m = size / 2 + n1
+      else
+         -- odd
+         m = (size + 1) / 2 + n1
+      end
+
+      assert (n1 <= m)
+      assert (n2 > m)
+
+      mpos = get_str_pos (pidxf, m)
+
+      -- print (string.format ("n1: %d, n2: %d, m: %d, mpos: %d", n1, n2, m, mpos))
+
+      if mpos == pos then
+         return pos
+      elseif mpos < pos then
+         n1 = m
+      else
+         n2 = m
+      end
+      size = n2 - n1
+
+      if n1 == n2 - 1 then
+         mpos = get_str_pos (pidxf, n1)
+         break
+      end
+   end
+
+   return mpos
 end
 
 function lower_bound (idxf, srcf, size, word)
@@ -185,6 +261,8 @@ function search_on_file (idxfile, srcfile, word)
    srcf:close ()
    return unpack (text_list)
 end
+
+---------------
 
 function search (srcfile, word)
    local lb = sufarr.search_lower_bound (idx, word)

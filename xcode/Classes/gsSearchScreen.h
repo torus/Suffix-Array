@@ -17,6 +17,7 @@
 
     NSString *workDir;
     NSString *idxPath;
+    NSString *pidxPath;
     NSString *docPath;
 }
 

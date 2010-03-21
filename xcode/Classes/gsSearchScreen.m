@@ -64,6 +64,7 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
 
     docPath = [[workDir stringByAppendingPathComponent:@"kjv.txt"] retain];
     idxPath = [[workDir stringByAppendingPathComponent:@"kjv.idx"] retain];
+    pidxPath = [[workDir stringByAppendingPathComponent:@"kjv.pidx"] retain];
 
 //    exec_lua(L, [NSString stringWithFormat:@"mkindex(\"%@\",\"%@\")", idxfile, docPath]);
 //    exec_lua(L, [NSString stringWithFormat:@"loadindex(\"%@\",\"%@\")", idxfile, docPath]);
@@ -111,7 +112,7 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
     NSUInteger len = [indexPath length];
     NSUInteger index = [indexPath indexAtPosition:len - 1];
     NSLog(@"%s, %d, %d", __FUNCTION__, len, index);
-    exec_lua(L, [NSString stringWithFormat:@"select_item(\"%@\", \"%@\", %d)", idxPath, docPath, index]);
+    exec_lua(L, [NSString stringWithFormat:@"select_item(\"%@\", \"%@\", %d)", pidxPath, docPath, index]);
     [m_pManager doStateChange:[gsTextScreen class]];
 }
 
