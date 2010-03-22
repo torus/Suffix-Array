@@ -10,7 +10,7 @@
 #import "GameState.h"
 
 //include the state classes we might switch to
-#import "gsMainMenu.h"
+#import "gsSearchScreen.h"
 
 #define LOOP_TIMER_MINIMUM 0.033f
 #define IPHONE_HEIGHT 480
@@ -43,7 +43,7 @@
     //[window makeKeyAndVisible];
 	
 	//set up our first state
-	[self doStateChange:[gsMainMenu class]];
+	[self doStateChange:[gsSearchScreen class]];
 }
 
 

@@ -15,9 +15,6 @@
 		2899E5220DE3E06400AC0155 /* Chapter3_FrameworkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* Chapter3_FrameworkViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* Chapter3_FrameworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* Chapter3_FrameworkViewController.m */; };
-		7F94D07E0FA96BDA00A02C11 /* tap.caf in Resources */ = {isa = PBXBuildFile; fileRef = 7F94D0740FA96BDA00A02C11 /* tap.caf */; };
-		7F94D0800FA96BDA00A02C11 /* scissors.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F94D0760FA96BDA00A02C11 /* scissors.png */; };
-		7F94D0840FA96BDA00A02C11 /* drawregion.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F94D07A0FA96BDA00A02C11 /* drawregion.png */; };
 		7F94D08C0FA96C4F00A02C11 /* GLESGameState.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F94D08A0FA96C4F00A02C11 /* GLESGameState.m */; };
 		7F94D09D0FA96C9200A02C11 /* GameStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F94D0990FA96C9200A02C11 /* GameStateManager.m */; };
 		7F94D09E0FA96C9200A02C11 /* GameState.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F94D09B0FA96C9200A02C11 /* GameState.m */; };
@@ -29,14 +26,6 @@
 		7F94D1000FA96E9100A02C11 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F94D0FF0FA96E9100A02C11 /* AudioToolbox.framework */; };
 		7F94D1290FA970DA00A02C11 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F94D1280FA970DA00A02C11 /* QuartzCore.framework */; };
 		9B8D8B6C10E06E85005FB7EC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B8D8B6B10E06E85005FB7EC /* OpenGLES.framework */; };
-		9B8D8B7310E06EA5005FB7EC /* gsTextureTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8D8B7210E06EA5005FB7EC /* gsTextureTest.m */; };
-		9B8D8BBC10E074BB005FB7EC /* social.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9B8D8BBB10E074BB005FB7EC /* social.mp3 */; };
-		9B8D8BC310E0754B005FB7EC /* soundtest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8D8BC210E0754B005FB7EC /* soundtest.xib */; };
-		9B8D8BC810E0755F005FB7EC /* gsSoundTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8D8BC710E0755F005FB7EC /* gsSoundTest.m */; };
-		9B8D8BE610E079AA005FB7EC /* storagetest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8D8BE510E079AA005FB7EC /* storagetest.xib */; };
-		9B8D8BEB10E079CA005FB7EC /* gsStorageTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8D8BEA10E079CA005FB7EC /* gsStorageTest.m */; };
-		9B8D8C0C10E0810E005FB7EC /* gsmainmenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8D8C0B10E0810E005FB7EC /* gsmainmenu.xib */; };
-		9B8D8C1110E08128005FB7EC /* gsMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8D8C1010E08128005FB7EC /* gsMainMenu.m */; };
 		9BEABBC60FFAA9BA00219B8E /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BEABBC50FFAA9BA00219B8E /* OpenAL.framework */; };
 		9C23666D113935CA0013D6B0 /* kjv.idx in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9C23666B113935A90013D6B0 /* kjv.idx */; };
 		9C23666E113935CA0013D6B0 /* kjv.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CC9B2A8112D2B3800961340 /* kjv.txt */; };
@@ -78,11 +67,6 @@
 		9C9A74251129324C00F692D6 /* sufarr_wrap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A74241129324C00F692D6 /* sufarr_wrap.cpp */; };
 		9CB539B4113B706D0052DC5C /* TextScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CB539B3113B706D0052DC5C /* TextScreen.xib */; };
 		9CC9B32C1131291400961340 /* indexer.lua in Resources */ = {isa = PBXBuildFile; fileRef = 9CC9B32B1131291400961340 /* indexer.lua */; };
-		9CC9B33C11312CA500961340 /* kjv_mini.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CC9B33B11312CA500961340 /* kjv_mini.txt */; };
-		9CC9B3601132351C00961340 /* kjv_mini.idx in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CC9B35F1132351C00961340 /* kjv_mini.idx */; };
-		9CE58B9E1154AC35005B3299 /* kjv_mini.pidx in Resources */ = {isa = PBXBuildFile; fileRef = 9CE58B9C1154AC35005B3299 /* kjv_mini.pidx */; };
-		9CE58B9F1154AC35005B3299 /* kjv.pidx in Resources */ = {isa = PBXBuildFile; fileRef = 9CE58B9D1154AC35005B3299 /* kjv.pidx */; };
-		9CE58BA01154AC54005B3299 /* kjv_mini.pidx in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CE58B9C1154AC35005B3299 /* kjv_mini.pidx */; };
 		9CE58BA11154AC54005B3299 /* kjv.pidx in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CE58B9D1154AC35005B3299 /* kjv.pidx */; };
 /* End PBXBuildFile section */
 
@@ -93,12 +77,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				9CE58BA01154AC54005B3299 /* kjv_mini.pidx in CopyFiles */,
 				9CE58BA11154AC54005B3299 /* kjv.pidx in CopyFiles */,
 				9C23666D113935CA0013D6B0 /* kjv.idx in CopyFiles */,
 				9C23666E113935CA0013D6B0 /* kjv.txt in CopyFiles */,
-				9CC9B33C11312CA500961340 /* kjv_mini.txt in CopyFiles */,
-				9CC9B3601132351C00961340 /* kjv_mini.idx in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,9 +98,6 @@
 		28D7ACF70DDB3853001CB0EB /* Chapter3_FrameworkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chapter3_FrameworkViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Chapter3_Framework_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter3_Framework_Prefix.pch; sourceTree = "<group>"; };
-		7F94D0740FA96BDA00A02C11 /* tap.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = tap.caf; path = Resources/tap.caf; sourceTree = "<group>"; };
-		7F94D0760FA96BDA00A02C11 /* scissors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = scissors.png; path = Resources/scissors.png; sourceTree = "<group>"; };
-		7F94D07A0FA96BDA00A02C11 /* drawregion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = drawregion.png; path = Resources/drawregion.png; sourceTree = "<group>"; };
 		7F94D08A0FA96C4F00A02C11 /* GLESGameState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLESGameState.m; sourceTree = "<group>"; };
 		7F94D08B0FA96C4F00A02C11 /* GLESGameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLESGameState.h; sourceTree = "<group>"; };
 		7F94D0990FA96C9200A02C11 /* GameStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameStateManager.m; sourceTree = "<group>"; };
@@ -139,18 +117,6 @@
 		7F94D1280FA970DA00A02C11 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B8D8B6B10E06E85005FB7EC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		9B8D8B7110E06EA5005FB7EC /* gsTextureTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gsTextureTest.h; sourceTree = "<group>"; };
-		9B8D8B7210E06EA5005FB7EC /* gsTextureTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gsTextureTest.m; sourceTree = "<group>"; };
-		9B8D8BBB10E074BB005FB7EC /* social.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = social.mp3; path = Resources/social.mp3; sourceTree = "<group>"; };
-		9B8D8BC210E0754B005FB7EC /* soundtest.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = soundtest.xib; path = Resources/soundtest.xib; sourceTree = "<group>"; };
-		9B8D8BC610E0755F005FB7EC /* gsSoundTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gsSoundTest.h; sourceTree = "<group>"; };
-		9B8D8BC710E0755F005FB7EC /* gsSoundTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gsSoundTest.m; sourceTree = "<group>"; };
-		9B8D8BE510E079AA005FB7EC /* storagetest.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = storagetest.xib; path = Resources/storagetest.xib; sourceTree = "<group>"; };
-		9B8D8BE910E079CA005FB7EC /* gsStorageTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gsStorageTest.h; sourceTree = "<group>"; };
-		9B8D8BEA10E079CA005FB7EC /* gsStorageTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gsStorageTest.m; sourceTree = "<group>"; };
-		9B8D8C0B10E0810E005FB7EC /* gsmainmenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = gsmainmenu.xib; path = Resources/gsmainmenu.xib; sourceTree = "<group>"; };
-		9B8D8C0F10E08128005FB7EC /* gsMainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gsMainMenu.h; sourceTree = "<group>"; };
-		9B8D8C1010E08128005FB7EC /* gsMainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gsMainMenu.m; sourceTree = "<group>"; };
 		9BEABBC50FFAA9BA00219B8E /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		9C23666B113935A90013D6B0 /* kjv.idx */ = {isa = PBXFileReference; lastKnownFileType = file; name = kjv.idx; path = Resources/kjv.idx; sourceTree = "<group>"; };
 		9C23670B113A310B0013D6B0 /* gsTextScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gsTextScreen.h; sourceTree = "<group>"; };
@@ -220,9 +186,6 @@
 		9CB539B3113B706D0052DC5C /* TextScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextScreen.xib; sourceTree = "<group>"; };
 		9CC9B2A8112D2B3800961340 /* kjv.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = kjv.txt; path = Resources/kjv.txt; sourceTree = "<group>"; };
 		9CC9B32B1131291400961340 /* indexer.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = indexer.lua; path = ../indexer.lua; sourceTree = SOURCE_ROOT; };
-		9CC9B33B11312CA500961340 /* kjv_mini.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = kjv_mini.txt; path = Resources/kjv_mini.txt; sourceTree = "<group>"; };
-		9CC9B35F1132351C00961340 /* kjv_mini.idx */ = {isa = PBXFileReference; lastKnownFileType = file; name = kjv_mini.idx; path = Resources/kjv_mini.idx; sourceTree = "<group>"; };
-		9CE58B9C1154AC35005B3299 /* kjv_mini.pidx */ = {isa = PBXFileReference; lastKnownFileType = file; name = kjv_mini.pidx; path = Resources/kjv_mini.pidx; sourceTree = "<group>"; };
 		9CE58B9D1154AC35005B3299 /* kjv.pidx */ = {isa = PBXFileReference; lastKnownFileType = file; name = kjv.pidx; path = Resources/kjv.pidx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -269,14 +232,11 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				9CE58B9C1154AC35005B3299 /* kjv_mini.pidx */,
-				9CE58B9D1154AC35005B3299 /* kjv.pidx */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				9CB539B3113B706D0052DC5C /* TextScreen.xib */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -297,20 +257,14 @@
 			isa = PBXGroup;
 			children = (
 				9CC9B32B1131291400961340 /* indexer.lua */,
-				9C23666B113935A90013D6B0 /* kjv.idx */,
 				9CC9B2A8112D2B3800961340 /* kjv.txt */,
-				9CC9B33B11312CA500961340 /* kjv_mini.txt */,
-				9CC9B35F1132351C00961340 /* kjv_mini.idx */,
-				9B8D8BE510E079AA005FB7EC /* storagetest.xib */,
-				9B8D8BBB10E074BB005FB7EC /* social.mp3 */,
-				7F94D1020FA96EE900A02C11 /* Textures */,
-				7F94D1010FA96EE300A02C11 /* Sounds */,
+				9C23666B113935A90013D6B0 /* kjv.idx */,
+				9CE58B9D1154AC35005B3299 /* kjv.pidx */,
 				2899E5210DE3E06400AC0155 /* Chapter3_FrameworkViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
-				9B8D8BC210E0754B005FB7EC /* soundtest.xib */,
-				9B8D8C0B10E0810E005FB7EC /* gsmainmenu.xib */,
 				9C985980111E56CB00B44B29 /* SearchScreen.xib */,
+				9CB539B3113B706D0052DC5C /* TextScreen.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -354,14 +308,6 @@
 		7F94D0C40FA96CF700A02C11 /* GameStates */ = {
 			isa = PBXGroup;
 			children = (
-				9B8D8B7110E06EA5005FB7EC /* gsTextureTest.h */,
-				9B8D8B7210E06EA5005FB7EC /* gsTextureTest.m */,
-				9B8D8BC610E0755F005FB7EC /* gsSoundTest.h */,
-				9B8D8BC710E0755F005FB7EC /* gsSoundTest.m */,
-				9B8D8BE910E079CA005FB7EC /* gsStorageTest.h */,
-				9B8D8BEA10E079CA005FB7EC /* gsStorageTest.m */,
-				9B8D8C0F10E08128005FB7EC /* gsMainMenu.h */,
-				9B8D8C1010E08128005FB7EC /* gsMainMenu.m */,
 				9C985965111E534700B44B29 /* gsSearchScreen.h */,
 				9C985966111E534700B44B29 /* gsSearchScreen.m */,
 				9C23670B113A310B0013D6B0 /* gsTextScreen.h */,
@@ -370,23 +316,6 @@
 				9C2F709C114C82EE00B933C3 /* globalLuaState.m */,
 			);
 			name = GameStates;
-			sourceTree = "<group>";
-		};
-		7F94D1010FA96EE300A02C11 /* Sounds */ = {
-			isa = PBXGroup;
-			children = (
-				7F94D0740FA96BDA00A02C11 /* tap.caf */,
-			);
-			name = Sounds;
-			sourceTree = "<group>";
-		};
-		7F94D1020FA96EE900A02C11 /* Textures */ = {
-			isa = PBXGroup;
-			children = (
-				7F94D0760FA96BDA00A02C11 /* scissors.png */,
-				7F94D07A0FA96BDA00A02C11 /* drawregion.png */,
-			);
-			name = Textures;
 			sourceTree = "<group>";
 		};
 		9C9A71EE11276A0800F692D6 /* SuffixArray */ = {
@@ -517,18 +446,9 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* Chapter3_FrameworkViewController.xib in Resources */,
-				7F94D07E0FA96BDA00A02C11 /* tap.caf in Resources */,
-				7F94D0800FA96BDA00A02C11 /* scissors.png in Resources */,
-				7F94D0840FA96BDA00A02C11 /* drawregion.png in Resources */,
-				9B8D8BBC10E074BB005FB7EC /* social.mp3 in Resources */,
-				9B8D8BC310E0754B005FB7EC /* soundtest.xib in Resources */,
-				9B8D8BE610E079AA005FB7EC /* storagetest.xib in Resources */,
-				9B8D8C0C10E0810E005FB7EC /* gsmainmenu.xib in Resources */,
 				9C985981111E56CB00B44B29 /* SearchScreen.xib in Resources */,
-				9CC9B32C1131291400961340 /* indexer.lua in Resources */,
 				9CB539B4113B706D0052DC5C /* TextScreen.xib in Resources */,
-				9CE58B9E1154AC35005B3299 /* kjv_mini.pidx in Resources */,
-				9CE58B9F1154AC35005B3299 /* kjv.pidx in Resources */,
+				9CC9B32C1131291400961340 /* indexer.lua in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,10 +485,6 @@
 				7F94D0AC0FA96CA500A02C11 /* GLTexture.m in Sources */,
 				7F94D0B50FA96CC100A02C11 /* ResourceManager.m in Sources */,
 				7F94D0BE0FA96CD500A02C11 /* SoundEngine.cpp in Sources */,
-				9B8D8B7310E06EA5005FB7EC /* gsTextureTest.m in Sources */,
-				9B8D8BC810E0755F005FB7EC /* gsSoundTest.m in Sources */,
-				9B8D8BEB10E079CA005FB7EC /* gsStorageTest.m in Sources */,
-				9B8D8C1110E08128005FB7EC /* gsMainMenu.m in Sources */,
 				9C985967111E534700B44B29 /* gsSearchScreen.m in Sources */,
 				9C9A727711276A4100F692D6 /* lapi.c in Sources */,
 				9C9A727811276A4100F692D6 /* lauxlib.c in Sources */,

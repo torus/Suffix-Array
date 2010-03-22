@@ -9,7 +9,6 @@
 #import "ResourceManager.h"
 #import "gsSearchScreen.h"
 #import "gsTextScreen.h"
-#import "gsMainMenu.h"
 #import "globalLuaState.h"
 
 #import "lua.h"
