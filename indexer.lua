@@ -2,6 +2,8 @@ local idx                       -- used in search
 local last_title
 local last_body
 local last_pos_list = {}
+local last_text_list = {}
+local last_search_word = ""
 
 function get_paragraph ()
    return last_title or "HOGE Title", last_body or "body body body"
@@ -248,6 +250,8 @@ function search_on_file (idxfile, srcfile, word)
       return
    end
 
+   last_search_word = word
+
    -- binary search
    local idxf = io.open (idxfile)
    local srcf = io.open (srcfile)
@@ -256,10 +260,19 @@ function search_on_file (idxfile, srcfile, word)
 
    local pos_list, text_list = get_result_texts (idxf, srcf, lb, ub)
    last_pos_list = pos_list
+   last_text_list = text_list
 
    idxf:close ()
    srcf:close ()
    return unpack (text_list)
+end
+
+function previous_search_results ()
+   return unpack (last_text_list)
+end
+
+function previous_search_word ()
+   return last_search_word
 end
 
 ---------------

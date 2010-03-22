@@ -58,18 +58,27 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
 //    workDir = [[paths objectAtIndex:0] retain];
     workDir = [[[NSBundle mainBundle] bundlePath] retain];
 
-    if (!L) {
-        initialize_lua();
-    }
-
     docPath = [[workDir stringByAppendingPathComponent:@"kjv.txt"] retain];
     idxPath = [[workDir stringByAppendingPathComponent:@"kjv.idx"] retain];
     pidxPath = [[workDir stringByAppendingPathComponent:@"kjv.pidx"] retain];
-
-//    exec_lua(L, [NSString stringWithFormat:@"mkindex(\"%@\",\"%@\")", idxfile, docPath]);
-//    exec_lua(L, [NSString stringWithFormat:@"loadindex(\"%@\",\"%@\")", idxfile, docPath]);
-
+    
     searchResultsArray = [[NSMutableArray alloc] init];
+
+    if (!L) {
+        initialize_lua();
+    } else {
+        int r1 = exec_lua(L, [NSString stringWithFormat:@"return previous_search_results()"]);
+        for (int i = 0; i < r1; i ++) {
+            NSString *item = [[NSString alloc] initWithUTF8String: lua_tostring(L, r1 - i)];
+            [searchResultsArray insertObject:item atIndex:0];
+        }
+        lua_pop(L, r1);
+
+        int r2 = exec_lua(L, [NSString stringWithFormat:@"return previous_search_word()"]);
+        NSString *word = [[NSString alloc] initWithUTF8String: lua_tostring(L, 1)];
+        searchbar.text = word;
+        lua_pop(L, r2);
+    }
 
     [searchbar becomeFirstResponder];
 }
