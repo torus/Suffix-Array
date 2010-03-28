@@ -134,6 +134,10 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
     [tblview reloadData];
 }
 
+- (IBAction) aboutButtonTapped {
+    NSLog(@"%s: tapped!", __FUNCTION__);
+}
+
 
 #pragma mark UISearchBar methods
 

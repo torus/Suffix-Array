@@ -12,6 +12,7 @@
 @interface gsSearchScreen : GameState {
     IBOutlet UIView *subview;
     IBOutlet UITableView *tblview;
+    IBOutlet UIBarButtonItem *aboutbtn;
     IBOutlet UISearchBar *searchbar;
     NSMutableArray *searchResultsArray;
 
@@ -23,4 +24,5 @@
 
 - (void) runTests;
 - (void) searchAndUpdate: (NSString*) searchText;
+- (IBAction) aboutButtonTapped;
 @end
