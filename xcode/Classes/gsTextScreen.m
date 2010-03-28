@@ -43,6 +43,9 @@
     titleview.title = title;
     titleview.leftBarButtonItem.title = @"Back to Serch";
     //titleview.backBarButtonItem.title = @"Back to Search";
+
+    textview.editable = NO;
+    textview.font = [UIFont fontWithName:@"TimesNewRomanPSMT" size:24];
     textview.text = body;
 
     return self;

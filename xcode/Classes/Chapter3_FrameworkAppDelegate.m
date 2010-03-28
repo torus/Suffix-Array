@@ -110,7 +110,8 @@
 		[viewController.view release]; //release gamestate 
 	}
 	
-	viewController.view = [[state alloc]  initWithFrame:CGRectMake(0, 0, IPHONE_WIDTH, IPHONE_HEIGHT) andManager:self];
+	viewController.view = [[state alloc]  initWithFrame:[[UIScreen mainScreen] applicationFrame] andManager:self];
+//	viewController.view = [[state alloc]  initWithFrame:CGRectMake(0, 0, IPHONE_WIDTH, IPHONE_HEIGHT) andManager:self];
 	
 	//now set our view as visible
     [window addSubview:viewController.view];

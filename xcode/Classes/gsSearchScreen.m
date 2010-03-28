@@ -147,4 +147,8 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
     [searchBar resignFirstResponder];
 }
 
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+    [searchBar resignFirstResponder];
+}
+
 @end
