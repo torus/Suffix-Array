@@ -9,6 +9,7 @@
 #import "ResourceManager.h"
 #import "gsSearchScreen.h"
 #import "gsTextScreen.h"
+#import "gsAboutScreen.h"
 #import "globalLuaState.h"
 
 #import "lua.h"
@@ -136,6 +137,8 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
 
 - (IBAction) aboutButtonTapped {
     NSLog(@"%s: tapped!", __FUNCTION__);
+    
+    [m_pManager doStateChange:[gsAboutScreen class]];
 }
 
 

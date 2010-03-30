@@ -31,6 +31,9 @@
 		9C23666E113935CA0013D6B0 /* kjv.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CC9B2A8112D2B3800961340 /* kjv.txt */; };
 		9C23670D113A310B0013D6B0 /* gsTextScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C23670C113A310B0013D6B0 /* gsTextScreen.m */; };
 		9C2F709D114C82EE00B933C3 /* globalLuaState.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2F709C114C82EE00B933C3 /* globalLuaState.m */; };
+		9C38B9581160235F00CD13EE /* gsAboutScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C38B9571160235F00CD13EE /* gsAboutScreen.m */; };
+		9C38B9681160270400CD13EE /* AboutScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C38B9671160270400CD13EE /* AboutScreen.xib */; };
+		9C5A8768116099C200891B1C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C5A8767116099C200891B1C /* icon.png */; };
 		9C985967111E534700B44B29 /* gsSearchScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C985966111E534700B44B29 /* gsSearchScreen.m */; };
 		9C985981111E56CB00B44B29 /* SearchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C985980111E56CB00B44B29 /* SearchScreen.xib */; };
 		9C9A727711276A4100F692D6 /* lapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A720E11276A4000F692D6 /* lapi.c */; };
@@ -123,6 +126,10 @@
 		9C23670C113A310B0013D6B0 /* gsTextScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gsTextScreen.m; sourceTree = "<group>"; };
 		9C2F709A114C829400B933C3 /* globalLuaState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = globalLuaState.h; sourceTree = "<group>"; };
 		9C2F709C114C82EE00B933C3 /* globalLuaState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = globalLuaState.m; sourceTree = "<group>"; };
+		9C38B9561160235F00CD13EE /* gsAboutScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gsAboutScreen.h; sourceTree = "<group>"; };
+		9C38B9571160235F00CD13EE /* gsAboutScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gsAboutScreen.m; sourceTree = "<group>"; };
+		9C38B9671160270400CD13EE /* AboutScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutScreen.xib; sourceTree = "<group>"; };
+		9C5A8767116099C200891B1C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = SOURCE_ROOT; };
 		9C985965111E534700B44B29 /* gsSearchScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gsSearchScreen.h; sourceTree = "<group>"; };
 		9C985966111E534700B44B29 /* gsSearchScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gsSearchScreen.m; sourceTree = "<group>"; };
 		9C985980111E56CB00B44B29 /* SearchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchScreen.xib; sourceTree = "<group>"; };
@@ -256,6 +263,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9C5A8767116099C200891B1C /* icon.png */,
 				9CC9B32B1131291400961340 /* indexer.lua */,
 				9CC9B2A8112D2B3800961340 /* kjv.txt */,
 				9C23666B113935A90013D6B0 /* kjv.idx */,
@@ -265,6 +273,7 @@
 				8D1107310486CEB800E47090 /* Info.plist */,
 				9C985980111E56CB00B44B29 /* SearchScreen.xib */,
 				9CB539B3113B706D0052DC5C /* TextScreen.xib */,
+				9C38B9671160270400CD13EE /* AboutScreen.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -312,6 +321,8 @@
 				9C985966111E534700B44B29 /* gsSearchScreen.m */,
 				9C23670B113A310B0013D6B0 /* gsTextScreen.h */,
 				9C23670C113A310B0013D6B0 /* gsTextScreen.m */,
+				9C38B9561160235F00CD13EE /* gsAboutScreen.h */,
+				9C38B9571160235F00CD13EE /* gsAboutScreen.m */,
 				9C2F709A114C829400B933C3 /* globalLuaState.h */,
 				9C2F709C114C82EE00B933C3 /* globalLuaState.m */,
 			);
@@ -449,6 +460,8 @@
 				9C985981111E56CB00B44B29 /* SearchScreen.xib in Resources */,
 				9CB539B4113B706D0052DC5C /* TextScreen.xib in Resources */,
 				9CC9B32C1131291400961340 /* indexer.lua in Resources */,
+				9C38B9681160270400CD13EE /* AboutScreen.xib in Resources */,
+				9C5A8768116099C200891B1C /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +533,7 @@
 				9C9A74251129324C00F692D6 /* sufarr_wrap.cpp in Sources */,
 				9C23670D113A310B0013D6B0 /* gsTextScreen.m in Sources */,
 				9C2F709D114C82EE00B933C3 /* globalLuaState.m in Sources */,
+				9C38B9581160235F00CD13EE /* gsAboutScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
