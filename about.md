@@ -26,9 +26,20 @@ Milky - A free stock vector iconset
 http://www.iconeden.com/icon/milky-a-free-vector-iconset.html
 
 
+Support Page
+------------
+
+http://kroneco.blogspot.com/search/label/biblesearch
+
+
 Author
 ------
 
-Toru Hisai toru@torus.jp
+Toru Hisai
+<br/>
+Kronecker's Delta Studio
+<br/>
+kroneco@gmail.com
+
 
 Enjoy!
