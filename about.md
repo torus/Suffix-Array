@@ -12,7 +12,7 @@ http://bible.ccim.org/dcb.html
 Code
 --------
 
-This application is based on the code from
+This program is based on the code from
 Paul Zirkle, Joe Hogue, *iPhone Game Development*, O'Reilly, 2009
 <br/>
 http://sourceforge.net/projects/iphonegamebook/files/
