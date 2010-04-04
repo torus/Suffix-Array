@@ -41,7 +41,7 @@
     }
 
     titleview.title = title;
-    titleview.leftBarButtonItem.title = @"Serch";
+    titleview.leftBarButtonItem.title = @"Search";
 
     textview.editable = NO;
     textview.font = [UIFont fontWithName:@"TimesNewRomanPSMT" size:24];
