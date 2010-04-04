@@ -52,7 +52,7 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
 }
 
 -(void) runTests {
-    NSLog(@"runTests!");
+//    NSLog(@"runTests!");
 
 //    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
 //    workDir = [[paths objectAtIndex:0] retain];
@@ -80,6 +80,7 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
         lua_pop(L, r2);
     }
 
+    searchbar.keyboardType = UIKeyboardTypeASCIICapable;
     [searchbar becomeFirstResponder];
 }
 
