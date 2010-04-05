@@ -27,13 +27,13 @@
 		7F94D1290FA970DA00A02C11 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F94D1280FA970DA00A02C11 /* QuartzCore.framework */; };
 		9B8D8B6C10E06E85005FB7EC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B8D8B6B10E06E85005FB7EC /* OpenGLES.framework */; };
 		9BEABBC60FFAA9BA00219B8E /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BEABBC50FFAA9BA00219B8E /* OpenAL.framework */; };
+		9C1043F01169613200E6BE2A /* icon57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C1043EF1169613200E6BE2A /* icon57x57.png */; };
 		9C23666D113935CA0013D6B0 /* kjv.idx in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9C23666B113935A90013D6B0 /* kjv.idx */; };
 		9C23666E113935CA0013D6B0 /* kjv.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CC9B2A8112D2B3800961340 /* kjv.txt */; };
 		9C23670D113A310B0013D6B0 /* gsTextScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C23670C113A310B0013D6B0 /* gsTextScreen.m */; };
 		9C2F709D114C82EE00B933C3 /* globalLuaState.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2F709C114C82EE00B933C3 /* globalLuaState.m */; };
 		9C38B9581160235F00CD13EE /* gsAboutScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C38B9571160235F00CD13EE /* gsAboutScreen.m */; };
 		9C38B9681160270400CD13EE /* AboutScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C38B9671160270400CD13EE /* AboutScreen.xib */; };
-		9C5A8768116099C200891B1C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C5A8767116099C200891B1C /* icon.png */; };
 		9C5A87C611647A4E00891B1C /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 9C5A87C511647A4E00891B1C /* about.html */; };
 		9C985967111E534700B44B29 /* gsSearchScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C985966111E534700B44B29 /* gsSearchScreen.m */; };
 		9C985981111E56CB00B44B29 /* SearchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C985980111E56CB00B44B29 /* SearchScreen.xib */; };
@@ -122,6 +122,7 @@
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B8D8B6B10E06E85005FB7EC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		9BEABBC50FFAA9BA00219B8E /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		9C1043EF1169613200E6BE2A /* icon57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon57x57.png; path = ../icon57x57.png; sourceTree = SOURCE_ROOT; };
 		9C23666B113935A90013D6B0 /* kjv.idx */ = {isa = PBXFileReference; lastKnownFileType = file; name = kjv.idx; path = Resources/kjv.idx; sourceTree = "<group>"; };
 		9C23670B113A310B0013D6B0 /* gsTextScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gsTextScreen.h; sourceTree = "<group>"; };
 		9C23670C113A310B0013D6B0 /* gsTextScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gsTextScreen.m; sourceTree = "<group>"; };
@@ -130,7 +131,6 @@
 		9C38B9561160235F00CD13EE /* gsAboutScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gsAboutScreen.h; sourceTree = "<group>"; };
 		9C38B9571160235F00CD13EE /* gsAboutScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gsAboutScreen.m; sourceTree = "<group>"; };
 		9C38B9671160270400CD13EE /* AboutScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutScreen.xib; sourceTree = "<group>"; };
-		9C5A8767116099C200891B1C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = SOURCE_ROOT; };
 		9C5A87C511647A4E00891B1C /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = about.html; path = Resources/about.html; sourceTree = "<group>"; };
 		9C985965111E534700B44B29 /* gsSearchScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gsSearchScreen.h; sourceTree = "<group>"; };
 		9C985966111E534700B44B29 /* gsSearchScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gsSearchScreen.m; sourceTree = "<group>"; };
@@ -265,8 +265,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9C1043EF1169613200E6BE2A /* icon57x57.png */,
 				9C5A87C511647A4E00891B1C /* about.html */,
-				9C5A8767116099C200891B1C /* icon.png */,
 				9CC9B32B1131291400961340 /* indexer.lua */,
 				9CC9B2A8112D2B3800961340 /* kjv.txt */,
 				9C23666B113935A90013D6B0 /* kjv.idx */,
@@ -464,8 +464,8 @@
 				9CB539B4113B706D0052DC5C /* TextScreen.xib in Resources */,
 				9CC9B32C1131291400961340 /* indexer.lua in Resources */,
 				9C38B9681160270400CD13EE /* AboutScreen.xib in Resources */,
-				9C5A8768116099C200891B1C /* icon.png in Resources */,
 				9C5A87C611647A4E00891B1C /* about.html in Resources */,
+				9C1043F01169613200E6BE2A /* icon57x57.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
