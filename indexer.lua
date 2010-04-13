@@ -1,12 +1,13 @@
 local idx                       -- used in search
 local last_title
 local last_body
+local last_result_count = 0
 local last_pos_list = {}
 local last_text_list = {}
 local last_search_word = ""
 
 function get_paragraph ()
-   return last_title or "HOGE Title", last_body or "body body body"
+   return last_title or "--", last_body or "---"
 end
 
 function select_item (pidxfile, srcfile, n)        -- n: 0 origin
@@ -247,7 +248,8 @@ end
 -- search seeking on file
 function search_on_file (idxfile, srcfile, word)
    if word == "" then
-      return
+      last_result_count = 0
+      return 0
    end
 
    last_search_word = word
@@ -261,10 +263,11 @@ function search_on_file (idxfile, srcfile, word)
    local pos_list, text_list = get_result_texts (idxf, srcf, lb, ub)
    last_pos_list = pos_list
    last_text_list = text_list
+   last_result_count = ub - lb
 
    idxf:close ()
    srcf:close ()
-   return unpack (text_list)
+   return last_result_count, unpack (text_list)
 end
 
 function previous_search_results ()
@@ -273,6 +276,10 @@ end
 
 function previous_search_word ()
    return last_search_word
+end
+
+function previous_result_count ()
+   return last_result_count
 end
 
 ---------------

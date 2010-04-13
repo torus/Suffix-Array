@@ -36,10 +36,12 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
 //    NSLog(@"%s: word = %@", __FUNCTION__, word);
     [arry removeAllObjects];
     int r2 = exec_lua(L, [NSString stringWithFormat:@"return search_on_file(\"%@\",\"%@\",\"%@\")", idxPath, docPath, word]);
-    for (int i = 0; i < r2; i ++) {
+    int count = lua_tointeger(L, 1);
+    for (int i = 0; i < r2 - 1; i ++) {
         NSString *item = [[NSString alloc] initWithUTF8String: lua_tostring(L, r2 - i)];
         [arry insertObject:item atIndex:0];
     }
+    NSLog(@"%s: count: %d", __FUNCTION__, count);
     lua_pop(L, r2);
 }
 
@@ -105,7 +107,14 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection: (NSInteger)section {
-	return @"Search Results";
+    NSLog(@"%s", __FUNCTION__);
+
+    int r = exec_lua(L, [NSString stringWithFormat:@"return previous_result_count()"]);
+    NSAssert(r == 1, @"previous_result_count");
+    int count = lua_tointeger(L, 1);
+    lua_pop(L, r);
+
+    return [NSString stringWithFormat:@"Search Results (%d)", count];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
