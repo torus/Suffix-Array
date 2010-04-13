@@ -22,14 +22,9 @@
 -(gsSearchScreen*) initWithFrame:(CGRect)frame andManager:(GameStateManager*)pManager 
 {
 	if(self = [super initWithFrame:frame andManager:pManager]) {
-		//load the storagetest.xib file here.
-		//this will instantiate the 'subview' uiview.
 		[[NSBundle mainBundle] loadNibNamed:@"SearchScreen" owner:self options:nil];
-		//add subview as... a subview.
-		//this will let everything from the nib file show up on screen.
 		[self addSubview:subview];
 	}
-	//load the last saved state of the toggle switch.
 	[self runTests];
 
 	return self;
@@ -40,10 +35,7 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
 {
 //    NSLog(@"%s: word = %@", __FUNCTION__, word);
     [arry removeAllObjects];
-//    NSLog(@"%s: removed", __FUNCTION__);
     int r2 = exec_lua(L, [NSString stringWithFormat:@"return search_on_file(\"%@\",\"%@\",\"%@\")", idxPath, docPath, word]);
-//    int r2 = exec_lua(L, [NSString stringWithFormat:@"return search(\"%@\",\"%@\")", docPath, word]);
-//    NSLog(@"%s: r2 = %d", __FUNCTION__, r2);
     for (int i = 0; i < r2; i ++) {
         NSString *item = [[NSString alloc] initWithUTF8String: lua_tostring(L, r2 - i)];
         [arry insertObject:item atIndex:0];
@@ -54,8 +46,6 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
 -(void) runTests {
 //    NSLog(@"runTests!");
 
-//    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-//    workDir = [[paths objectAtIndex:0] retain];
     workDir = [[[NSBundle mainBundle] bundlePath] retain];
 
     docPath = [[workDir stringByAppendingPathComponent:@"kjv.txt"] retain];
@@ -127,11 +117,6 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
 }
 
 - (void) searchAndUpdate: (NSString*) searchText {
-/*    NSLog(@"%s", __FUNCTION__);
-    NSLog(@"%@", self);
-    NSLog(@"%@", docPath);
-    NSLog(@"%@", idxPath);
-*/
     search_and_update_table (L, searchResultsArray, idxPath, docPath, searchText);    
     [tblview reloadData];
 }
