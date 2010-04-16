@@ -19,6 +19,8 @@
 
 @implementation gsSearchScreen
 
+@synthesize searchbar;
+
 -(gsSearchScreen*) initWithFrame:(CGRect)frame andManager:(GameStateManager*)pManager 
 {
 	if(self = [super initWithFrame:frame andManager:pManager]) {
@@ -107,7 +109,7 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection: (NSInteger)section {
-    NSLog(@"%s", __FUNCTION__);
+//    NSLog(@"%s", __FUNCTION__);
 
     int r = exec_lua(L, [NSString stringWithFormat:@"return previous_result_count()"]);
     NSAssert(r == 1, @"previous_result_count");
@@ -136,8 +138,15 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
     [m_pManager doStateChange:[gsAboutScreen class]];
 }
 
+#pragma mark UIScrollViewDelegate methods
 
-#pragma mark UISearchBar methods
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    NSLog(@"%s", __FUNCTION__);
+    gsSearchScreen *scr = (gsSearchScreen *)scrollView.delegate;
+    [scr.searchbar resignFirstResponder];
+}
+
+#pragma mark UISearchBarDelegate methods
 
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
     NSLog(@"search: %@", searchText);

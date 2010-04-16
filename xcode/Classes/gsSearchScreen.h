@@ -25,4 +25,7 @@
 - (void) runTests;
 - (void) searchAndUpdate: (NSString*) searchText;
 - (IBAction) aboutButtonTapped;
+
+@property (retain, nonatomic) UISearchBar *searchbar;
+
 @end
