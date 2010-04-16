@@ -78,6 +78,16 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
     [searchbar becomeFirstResponder];
 }
 
+- (void)dealloc {
+    [searchResultsArray release];
+    [workDir release];
+    [idxPath release];
+    [pidxPath release];
+    [docPath release];
+    [searchbar release];
+    
+    [super dealloc];
+}
 
 ////////////
 
@@ -141,7 +151,7 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
 #pragma mark UIScrollViewDelegate methods
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    NSLog(@"%s", __FUNCTION__);
+//    NSLog(@"%s", __FUNCTION__);
     gsSearchScreen *scr = (gsSearchScreen *)scrollView.delegate;
     [scr.searchbar resignFirstResponder];
 }
