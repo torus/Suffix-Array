@@ -107,12 +107,13 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 //    NSLog(@"%s", __FUNCTION__);
 	static NSString *CellIndentifier = @"Cell";
-	
+
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIndentifier];
 	if (cell == nil) {
 		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIndentifier] autorelease];
 	}
 	if (indexPath.section == 0) {
+        cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:18];
 		cell.textLabel.text = [searchResultsArray objectAtIndex:indexPath.row];
     }
 	return cell;
