@@ -566,7 +566,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../../local/lib\"",
 				);
-				PRODUCT_NAME = "Chapter3 Framework";
+				PRODUCT_NAME = BibleSearch;
 			};
 			name = Debug;
 		};
