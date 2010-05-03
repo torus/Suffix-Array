@@ -22,7 +22,7 @@
     NSString *docPath;
 }
 
-- (void) runTests;
+- (void) searchScreenMain;
 - (void) searchAndUpdate: (NSString*) searchText;
 - (IBAction) aboutButtonTapped;
 

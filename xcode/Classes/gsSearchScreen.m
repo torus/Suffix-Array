@@ -27,7 +27,7 @@
 		[[NSBundle mainBundle] loadNibNamed:@"SearchScreen" owner:self options:nil];
 		[self addSubview:subview];
 	}
-	[self runTests];
+	[self searchScreenMain];
 
 	return self;
 }
@@ -47,7 +47,7 @@ static void search_and_update_table (lua_State *L, NSMutableArray *arry,
     lua_pop(L, r2);
 }
 
--(void) runTests {
+-(void) searchScreenMain {
 //    NSLog(@"runTests!");
 
     workDir = [[[NSBundle mainBundle] bundlePath] retain];
